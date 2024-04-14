@@ -3,6 +3,15 @@ _for In-band Network Telemetry_
 
 Team: Máté Fekete, Nóra Szécsi and Róbert Fikó (alphabetical order)
 
+## Open questions
+1. Is there more SRH headers, if not, what is next header?
+2. Is there one INT header or not? If there is one, all of the switches append their telemetry data to it?
+3. What happens if the packet exceeds the MTU, (so M bit is flipped, in INT header)? We wait for the next packet? What kind of headers should/will it have?
+4. Hop ML(5 bits) indicates the amount of metadata inserted by
+switches, RemainingHopCnt(8 bits) indicates the number of remaining switches that are allowed to add their metadata to the packet. Why is RemainingHopCnt larger then Hop ML? (5 vs 8 bits)
+5. What should be the format of this assignment, Markdown is fine? or PDF? or...?
+6. How to solve the forwarding of the Probe? Is there any implementation of SRH routing? 
+
 ## Goals
 - process INT instructions in SRv6 labels
 - store the telemetry values in an INT header
@@ -47,7 +56,7 @@ The implementation of the INT header and Metadata stack is required so the netwo
 _Picture source: research paper TODO:_
 
 
-### 6. Implementation of the SRv6 header
+### 6. Implementation of the SRH (SRv6) header
 TODO: Should contain what telemetry is required from the business application??
 
 #### 6.1 SRv6 header
@@ -60,3 +69,4 @@ TODO:
 
 ### 7. Implement the forwarding of the probes in switches
  TODO:
+

@@ -1,0 +1,28 @@
+hogy lehet egy tanuló switchet megcsinálni?
+
+ehhez nem elég a dataplane, de a control plane is kell, mert a táblákat fel kell tudni tölteni
+2 megoldás van
+ha bejön egy csomag, megnézzük a source mac-et, a switch látta azt a mac címet egy adott porton, tehát ott érhető el az az állomás
+ezt kéne nekünk megtanulni
+a továbbításhoz a destination macet használjuk, a source pedig a tanuláshoz kell 
+a control planenek ennyi infó kell: melyik mac cím melyik porton jelent meg, ebből már a továbbító táblába be tudja szúrni az új sort
+cp-nek lehet felpattintani: cpu porton keresztül (pl ahol fut egy operációs rendszer), vagy digesttel (speciális üzenet, ez nem ethernet csomag lesz, hanem egy üzenet/notification az API-n keresztül, és a control planeben lehet rá írni handlert, hogy mit kell vele csinálni)
+
+mindkét megoldás ebben a példában: fel kell küldeni a csomagot, az elsőben CPU-nak pattintjuk fel (ethernet csomag)
+másiknál meg a source macet meg portot tedd össze és küld fel (a másik oldalon itt már tudjuk, hogy ezt várjuk csak, nem kell bajlódni azzal, hogy kicsomagoljunk, tudjuk, hogy ez jön)
+
+csinálunk saját headert, amiben ezek a dolgok vannak (mac cím és source port) (parsolni nem itt fogjuk, mert nem nekünk kell, de emittelni viszont igen)
+az ingress blokk annyiban változott, hogy ezt nem lehet már egy táblával megoldani a data planen. ha p4 ben tanuló switchet csinálunk legalább 2 tábla kell (egyik táblát használjuk arra, hogy számontartsuk, hogy láttunk-e már valamit vagy sem), a továbbítótáblában a destination mac alapján megyünk, míg az előbbinél a source macet használjuk (source mac tábla)
+
+a default action a maclearn:
+
+le fogjuk klónozni a bejövő csomagot, az egyiket átalakítjuk, hogy tovább lehessen küldeni a cpunak;
+klónozás típusa: ingressen klónozunk (ott még egy volt belőle), ahogy ez befejeződik, az egressen kettő lesz belőle (itt lehet majd különbséget tenni köztük); az eredetit továbbítjuk, a klónt meg felküldjük
+
+
+a klónozás megtörtént ingress után, az eredeti példányt küldjük tovább, a klónt át kell építeni (tudjuk, hogy áttettük a 100-as portra), az egressen bejön a pont, amikor a klónt kezelni kell, ha instance type=1, akkor ez a klónozott példány
+nála azt csináljuk, hogy hozzácsapjuk a cpu headert, benne volt 2 mező (source address az ethernetből, ingress port a metadatából, ezt jeleztük klónozásnál, hogy a metaadatok is menjenek tovább és ebben az az infó van amit ingressről küldtünk)
+
+a truncate fogja a csomagot lecsonkolni 22 bájtosra (ez pont az ethernet header és a cpu header), a végén lesz pedding, de ezt levágja, lehet a payloadot is trunkölni
+ennek úgyis a serializálás után van hatása
+az emittálásnál a cpusat is emittálni kell (ez általános, itt a header cpu invalid lesz)

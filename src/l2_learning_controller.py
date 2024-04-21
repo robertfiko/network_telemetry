@@ -24,7 +24,6 @@ class L2Controller(object):
         self.controller.reset_state()
         self.add_boadcast_groups()
         self.add_mirror()
-        #self.fill_table_test()
 
     def add_mirror(self):
         if self.cpu_port:
@@ -52,17 +51,14 @@ class L2Controller(object):
             mc_grp_id +=1
             rid +=1
 
-    def fill_table_test(self):
-        self.controller.table_add("dmac", "forward", ['00:00:0a:00:00:01'], ['1'])
-        self.controller.table_add("dmac", "forward", ['00:00:0a:00:00:02'], ['2'])
-        self.controller.table_add("dmac", "forward", ['00:00:0a:00:00:03'], ['3'])
-        self.controller.table_add("dmac", "forward", ['00:00:0a:00:00:04'], ['4'])
-
     def learn(self, learning_data):
-        for mac_addr, ingress_port in  learning_data:
+        for mac_addr, ingress_port in  learning_data: #ez azért van, mert a dp-n a digestnél egyedileg betettük a macet és a portot, de maga a rendszer lehet, hogy blokkosítja ezt és batchekben küldi fel, ha túl gyakran küldünk digestet, akkor az lehet hogy "tüzelni fog", batchekben jönnek meg a digestek, nem egyedi üzenetenként mennek fel, mert annak túl nagy lenne az overheadje
             print("mac: %012X ingress_port: %s " % (mac_addr, ingress_port))
-            self.controller.table_add("smac", "NoAction", [str(mac_addr)])
+            #TODO: Add an entry to smac
+            self.controller.table_add("smac", "NoAction", [str(mac_addr)]) #maga a táblanév az első paraméter, a második az akció, a harmadik pedig egy páros (vagyis a matching key, a kulcs, amire illeszkedni kell, az értékkel), ként még paraméterlista, de olyan most nincs, ezért hagyhatjuk üresen
+            #TODO: Add an entry to dmac
             self.controller.table_add("dmac", "forward", [str(mac_addr)], [str(ingress_port)])
+            #HINT: table_add(table_name, action_name, list of matches, list of action parameters)
 
     def unpack_digest(self, msg, num_samples):
         digest = []
@@ -72,34 +68,30 @@ class L2Controller(object):
             starting_index +=8
             mac_addr = (mac0 << 16) + mac1
             digest.append((mac_addr, ingress_port))
+
         return digest
 
     def recv_msg_digest(self, msg):
         topic, device_id, ctx_id, list_id, buffer_id, num = struct.unpack("<iQiiQi",
                                                                           msg[:32])
         digest = self.unpack_digest(msg, num)
-        self.learn(digest)
+        self.learn(digest) #a digest egy struktúra, amibe mi rakjuk bele az infót, ez egy üzenetként megy fel
+        #amit feldolgozunk és az alapján beszúrjuk a dolgokat
+        #2 dolgot tartlmaz a digest: a mac címet (48 bit) és az ingress portot (9 bit)
+        #erre már ez fel van készítve a learn-ben
         #Acknowledge digest
         self.controller.client.bm_learning_ack_buffer(ctx_id, list_id, buffer_id)
+
 
     def run_digest_loop(self):
         sub = nnpy.Socket(nnpy.AF_SP, nnpy.SUB)
         notifications_socket = self.controller.client.bm_mgmt_get_info().notifications_socket
+        #print(notifications_socket)
         sub.connect(notifications_socket)
         sub.setsockopt(nnpy.SUB, nnpy.SUB_SUBSCRIBE, '')
         while True:
             msg = sub.recv()
             self.recv_msg_digest(msg)
-
-    def recv_msg_cpu(self, pkt):
-        packet = Ether(raw(pkt))
-        if packet.type == 0x1234:
-            cpu_header = CpuHeader(bytes(packet.load))
-            self.learn([(cpu_header.macAddr, cpu_header.ingress_port)])
-
-    def run_cpu_port_loop(self):
-        cpu_port_intf = str(self.topo.get_cpu_port_intf(self.sw_name).replace("eth0", "eth1"))
-        sniff(iface=cpu_port_intf, prn=self.recv_msg_cpu)
 
 
 if __name__ == "__main__":
@@ -108,5 +100,5 @@ if __name__ == "__main__":
     receive_from = sys.argv[2]
     if receive_from == "digest":
         controller = L2Controller(sw_name).run_digest_loop()
-    elif receive_from == "cpu":
-        controller = L2Controller(sw_name).run_cpu_port_loop()
+    else:
+        print("nem jó")

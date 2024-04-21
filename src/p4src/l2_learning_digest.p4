@@ -3,7 +3,7 @@
 #include <v1model.p4>
 
 const bit<16> TYPE_IPV4 = 0x800;
-const bit<16> L2_LEARN_ETHER_TYPE = 0x1234;
+const bit<16> TYPE_BROADCAST = 0x1234;
 
 /*************************************************************************
 *********************** H E A D E R S  ***********************************
@@ -19,20 +19,20 @@ header ethernet_t {
     bit<16>   etherType;
 }
 
-header cpu_t {
+struct learn_t {
+
     bit<48> srcAddr;
-    bit<16> ingress_port;
+    bit<9>  ingress_port;
+
 }
 
 struct metadata {
-
-    bit<9> ingress_port;
     /* empty */
+    learn_t learn;
 }
 
 struct headers {
     ethernet_t   ethernet;
-    cpu_t        cpu;
 }
 
 
@@ -74,9 +74,10 @@ control MyIngress(inout headers hdr,
         mark_to_drop(standard_metadata);
     }
 
-    action mac_learn() {
-        meta.ingress_port = standard_metadata.ingress_port;
-        clone3(CloneType.I2E, 100, meta);
+    action mac_learn(){
+        meta.learn.srcAddr = hdr.ethernet.srcAddr;
+        meta.learn.ingress_port = standard_metadata.ingress_port;
+        digest<learn_t>(1, meta.learn);
     }
 
     table smac {
@@ -147,17 +148,8 @@ control MyEgress(inout headers hdr,
                  inout metadata meta,
                  inout standard_metadata_t standard_metadata) {
 
-    apply {
 
-        // If ingress clone
-        if (standard_metadata.instance_type == 1){
-            hdr.cpu.setValid();
-            hdr.cpu.srcAddr = hdr.ethernet.srcAddr;
-            hdr.cpu.ingress_port = (bit<16>)meta.ingress_port;
-            hdr.ethernet.etherType = L2_LEARN_ETHER_TYPE;
-            truncate((bit<32>)22); //ether+cpu header
-        }
-    }
+    apply {  }
 }
 
 /*************************************************************************
@@ -170,6 +162,7 @@ control MyComputeChecksum(inout headers hdr, inout metadata meta) {
     }
 }
 
+
 /*************************************************************************
 ***********************  D E P A R S E R  *******************************
 *************************************************************************/
@@ -178,7 +171,6 @@ control MyDeparser(packet_out packet, in headers hdr) {
     apply {
         //parsed headers have to be added again into the packet.
         packet.emit(hdr.ethernet);
-        packet.emit(hdr.cpu);
     }
 }
 

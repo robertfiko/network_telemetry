@@ -1,0 +1,33 @@
+{
+  "p4_src": "p4src/l2_learning_digest.p4",
+  "cli": true,
+  "pcap_dump": true,
+  "enable_log": true,
+  "topology": {
+    "assignment_strategy": "l2",
+    "default":{
+      "auto_arp_tables": false
+    },
+    "links": [["s1", "h1"], ["s4", "h2"], ["s1", "s2"], ["s1", "s6"], ["s6", "s2"], ["s6", "s3"], ["s6", "s5"], ["s5", "s2"], ["s5", "s3"], ["s5", "s4"], ["s2", "s3"], ["s3", "s4"]],
+    "hosts": {
+      "h1": {
+      },
+      "h2": {
+      }
+    },
+    "switches": {
+      "s1": {
+      },
+      "s2": {
+      },
+      "s3": {
+      },
+      "s4": {
+      },
+      "s5": {
+      },
+      "s6": {
+      }
+    }
+  }
+}

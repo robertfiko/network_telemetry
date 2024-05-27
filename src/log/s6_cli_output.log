@@ -1,0 +1,44 @@
+Obtaining JSON from switch...
+Done
+Control utility for runtime P4 table manipulation
+RuntimeCmd: Adding entry to exact match table add_our_telemetry
+match key:           EXACT-00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:06
+action:              addMetadata
+runtime data:        06
+Entry has been added with handle 0
+RuntimeCmd: Adding entry to exact match table forward
+match key:           EXACT-00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01
+action:              setEgress
+runtime data:        00:01
+Entry has been added with handle 0
+RuntimeCmd: Adding entry to exact match table forward
+match key:           EXACT-00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:02
+action:              setEgress
+runtime data:        00:04
+Entry has been added with handle 1
+RuntimeCmd: Adding entry to exact match table forward
+match key:           EXACT-00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:01
+action:              setEgress
+runtime data:        00:01
+Entry has been added with handle 2
+RuntimeCmd: Adding entry to exact match table forward
+match key:           EXACT-00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:02
+action:              setEgress
+runtime data:        00:02
+Entry has been added with handle 3
+RuntimeCmd: Adding entry to exact match table forward
+match key:           EXACT-00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:03
+action:              setEgress
+runtime data:        00:03
+Entry has been added with handle 4
+RuntimeCmd: Adding entry to exact match table forward
+match key:           EXACT-00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:04
+action:              setEgress
+runtime data:        00:04
+Entry has been added with handle 5
+RuntimeCmd: Adding entry to exact match table forward
+match key:           EXACT-00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:05
+action:              setEgress
+runtime data:        00:04
+Entry has been added with handle 6
+RuntimeCmd: 

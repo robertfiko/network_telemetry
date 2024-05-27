@@ -1,0 +1,8 @@
+table_add add_our_telemetry addMetadata 0000:0000:0000:0000:0000:0000:0001:0006 => 6
+table_add forward setEgress 0000:0000:0000:0000:0000:0000:0000:0001 => 1
+table_add forward setEgress 0000:0000:0000:0000:0000:0000:0000:0002 => 4
+table_add forward setEgress 0000:0000:0000:0000:0000:0000:0001:0001 => 1
+table_add forward setEgress 0000:0000:0000:0000:0000:0000:0001:0002 => 2
+table_add forward setEgress 0000:0000:0000:0000:0000:0000:0001:0003 => 3
+table_add forward setEgress 0000:0000:0000:0000:0000:0000:0001:0004 => 4
+table_add forward setEgress 0000:0000:0000:0000:0000:0000:0001:0005 => 4

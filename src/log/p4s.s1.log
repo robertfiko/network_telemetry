@@ -1,699 +1,1448 @@
 Warning: you requested the nanomsg event logger, but bmv2 was compiled without -DBMELOG, and the event logger cannot be activated
 Calling target program-options parser
-[17:04:40.221] [bmv2] [D] [thread 79744] Set default default entry for table 'tbl_p4src226': p4src226 - 
-[17:04:40.221] [bmv2] [D] [thread 79744] Set default default entry for table 'tbl_p4src215': p4src215 - 
-[17:04:40.221] [bmv2] [D] [thread 79744] Set default default entry for table 'MyIngress.add_our_telemetry': NoAction - 
-[17:04:40.221] [bmv2] [D] [thread 79744] Set default default entry for table 'tbl_p4src237': p4src237 - 
-[17:04:40.221] [bmv2] [D] [thread 79744] Set default default entry for table 'tbl_p4src245': p4src245 - 
-[17:04:40.221] [bmv2] [D] [thread 79744] Set default default entry for table 'tbl_p4src248': p4src248 - 
-[17:04:40.221] [bmv2] [D] [thread 79744] Set default default entry for table 'MyIngress.forward': NoAction - 
-[17:04:40.221] [bmv2] [D] [thread 79744] Set default default entry for table 'tbl_p4src253': p4src253 - 
-[17:04:40.221] [bmv2] [D] [thread 79744] Set default default entry for table 'tbl_p4src256': p4src256 - 
-[17:04:40.222] [bmv2] [D] [thread 79744] Set default default entry for table 'tbl_p4src273': p4src273 - 
+[09:13:36.656] [bmv2] [D] [thread 2101] Set default default entry for table 'tbl_p4src226': p4src226 - 
+[09:13:36.656] [bmv2] [D] [thread 2101] Set default default entry for table 'tbl_p4src215': p4src215 - 
+[09:13:36.656] [bmv2] [D] [thread 2101] Set default default entry for table 'MyIngress.add_our_telemetry': NoAction - 
+[09:13:36.656] [bmv2] [D] [thread 2101] Set default default entry for table 'tbl_p4src237': p4src237 - 
+[09:13:36.656] [bmv2] [D] [thread 2101] Set default default entry for table 'tbl_p4src245': p4src245 - 
+[09:13:36.656] [bmv2] [D] [thread 2101] Set default default entry for table 'tbl_p4src248': p4src248 - 
+[09:13:36.656] [bmv2] [D] [thread 2101] Set default default entry for table 'MyIngress.forward': NoAction - 
+[09:13:36.657] [bmv2] [D] [thread 2101] Set default default entry for table 'tbl_p4src253': p4src253 - 
+[09:13:36.657] [bmv2] [D] [thread 2101] Set default default entry for table 'tbl_p4src256': p4src256 - 
+[09:13:36.657] [bmv2] [D] [thread 2101] Set default default entry for table 'tbl_p4src273': p4src273 - 
 Adding interface s1-eth1 as port 1
-[17:04:40.225] [bmv2] [D] [thread 79744] Adding interface s1-eth1 as port 1
+[09:13:36.660] [bmv2] [D] [thread 2101] Adding interface s1-eth1 as port 1
 Adding interface s1-eth2 as port 2
-[17:04:40.261] [bmv2] [D] [thread 79744] Adding interface s1-eth2 as port 2
+[09:13:36.711] [bmv2] [D] [thread 2101] Adding interface s1-eth2 as port 2
 Adding interface s1-eth3 as port 3
-[17:04:40.277] [bmv2] [D] [thread 79744] Adding interface s1-eth3 as port 3
-[17:04:40.293] [bmv2] [I] [thread 79744] Starting Thrift server on port 9090
-[17:04:40.294] [bmv2] [I] [thread 79744] Thrift server was started
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Processing packet received on port 2
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Parser 'parser': start
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Parser 'parser' entering state 'start'
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Extracting header 'ethernet'
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Parser state 'start': key is 86dd
-[17:04:40.294] [bmv2] [T] [thread 79750] [0.0] [cxt 0] Bytes parsed: 14
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Extracting header 'ipv6'
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Parser state 'parse_ipv6': key is 00
-[17:04:40.294] [bmv2] [T] [thread 79750] [0.0] [cxt 0] Bytes parsed: 54
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Parser 'parser': end
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Pipeline 'ingress': start
-[17:04:40.294] [bmv2] [T] [thread 79750] [0.0] [cxt 0] Applying table 'tbl_p4src226'
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Looking up key:
+[09:13:36.743] [bmv2] [D] [thread 2101] Adding interface s1-eth3 as port 3
+[09:13:36.779] [bmv2] [I] [thread 2101] Starting Thrift server on port 9090
+[09:13:36.779] [bmv2] [I] [thread 2101] Thrift server was started
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Processing packet received on port 1
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Parser 'parser': start
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Extracting header 'ethernet'
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Parser state 'start': key is 86dd
+[09:13:36.863] [bmv2] [T] [thread 2107] [0.0] [cxt 0] Bytes parsed: 14
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Extracting header 'ipv6'
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Parser state 'parse_ipv6': key is 00
+[09:13:36.863] [bmv2] [T] [thread 2107] [0.0] [cxt 0] Bytes parsed: 54
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Parser 'parser': end
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Pipeline 'ingress': start
+[09:13:36.863] [bmv2] [T] [thread 2107] [0.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Looking up key:
 
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Table 'tbl_p4src226': miss
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Action entry is p4src226 - 
-[17:04:40.294] [bmv2] [T] [thread 79750] [0.0] [cxt 0] Action p4src226
-[17:04:40.294] [bmv2] [T] [thread 79750] [0.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
-[17:04:40.294] [bmv2] [T] [thread 79750] [0.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
-[17:04:40.294] [bmv2] [T] [thread 79750] [0.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is false
-[17:04:40.294] [bmv2] [T] [thread 79750] [0.0] [cxt 0] Applying table 'tbl_p4src248'
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Looking up key:
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Action entry is p4src226 - 
+[09:13:36.863] [bmv2] [T] [thread 2107] [0.0] [cxt 0] Action p4src226
+[09:13:36.863] [bmv2] [T] [thread 2107] [0.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:13:36.863] [bmv2] [T] [thread 2107] [0.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:13:36.863] [bmv2] [T] [thread 2107] [0.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is false
+[09:13:36.863] [bmv2] [T] [thread 2107] [0.0] [cxt 0] Applying table 'tbl_p4src248'
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Looking up key:
 
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Table 'tbl_p4src248': miss
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Action entry is p4src248 - 
-[17:04:40.294] [bmv2] [T] [thread 79750] [0.0] [cxt 0] Action p4src248
-[17:04:40.294] [bmv2] [T] [thread 79750] [0.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(248) Primitive meta.to_send_to_ipv6 = hdr.ipv6
-[17:04:40.294] [bmv2] [T] [thread 79750] [0.0] [cxt 0] Applying table 'MyIngress.forward'
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Looking up key:
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Table 'tbl_p4src248': miss
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Action entry is p4src248 - 
+[09:13:36.863] [bmv2] [T] [thread 2107] [0.0] [cxt 0] Action p4src248
+[09:13:36.863] [bmv2] [T] [thread 2107] [0.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(248) Primitive meta.to_send_to_ipv6 = hdr.ipv6
+[09:13:36.863] [bmv2] [T] [thread 2107] [0.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Looking up key:
+* meta.to_send_to_ipv6.Addr0: ff0200000000000000000001ffffa147
+
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Table 'MyIngress.forward': miss
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Action entry is NoAction - 
+[09:13:36.863] [bmv2] [T] [thread 2107] [0.0] [cxt 0] Action NoAction
+[09:13:36.863] [bmv2] [T] [thread 2107] [0.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is false
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Pipeline 'ingress': end
+[09:13:36.863] [bmv2] [D] [thread 2107] [0.0] [cxt 0] Egress port is 0
+[09:13:36.864] [bmv2] [D] [thread 2108] [0.0] [cxt 0] Pipeline 'egress': start
+[09:13:36.864] [bmv2] [T] [thread 2108] [0.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is false
+[09:13:36.864] [bmv2] [D] [thread 2108] [0.0] [cxt 0] Pipeline 'egress': end
+[09:13:36.864] [bmv2] [D] [thread 2108] [0.0] [cxt 0] Deparser 'deparser': start
+[09:13:36.864] [bmv2] [D] [thread 2108] [0.0] [cxt 0] Deparsing header 'ethernet'
+[09:13:36.864] [bmv2] [D] [thread 2108] [0.0] [cxt 0] Deparsing header 'ipv6'
+[09:13:36.864] [bmv2] [D] [thread 2108] [0.0] [cxt 0] Deparser 'deparser': end
+[09:13:36.864] [bmv2] [D] [thread 2112] [0.0] [cxt 0] Transmitting packet of size 86 out of port 0
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Processing packet received on port 2
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Parser 'parser': start
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Extracting header 'ethernet'
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Parser state 'start': key is 86dd
+[09:13:36.923] [bmv2] [T] [thread 2107] [1.0] [cxt 0] Bytes parsed: 14
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Extracting header 'ipv6'
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Parser state 'parse_ipv6': key is 00
+[09:13:36.923] [bmv2] [T] [thread 2107] [1.0] [cxt 0] Bytes parsed: 54
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Parser 'parser': end
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Pipeline 'ingress': start
+[09:13:36.923] [bmv2] [T] [thread 2107] [1.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Looking up key:
+
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Action entry is p4src226 - 
+[09:13:36.923] [bmv2] [T] [thread 2107] [1.0] [cxt 0] Action p4src226
+[09:13:36.923] [bmv2] [T] [thread 2107] [1.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:13:36.923] [bmv2] [T] [thread 2107] [1.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:13:36.923] [bmv2] [T] [thread 2107] [1.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is false
+[09:13:36.923] [bmv2] [T] [thread 2107] [1.0] [cxt 0] Applying table 'tbl_p4src248'
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Looking up key:
+
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Table 'tbl_p4src248': miss
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Action entry is p4src248 - 
+[09:13:36.923] [bmv2] [T] [thread 2107] [1.0] [cxt 0] Action p4src248
+[09:13:36.923] [bmv2] [T] [thread 2107] [1.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(248) Primitive meta.to_send_to_ipv6 = hdr.ipv6
+[09:13:36.923] [bmv2] [T] [thread 2107] [1.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Looking up key:
 * meta.to_send_to_ipv6.Addr0: ff020000000000000000000000000016
 
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Table 'MyIngress.forward': miss
-[17:04:40.294] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Action entry is NoAction - 
-[17:04:40.295] [bmv2] [T] [thread 79750] [0.0] [cxt 0] Action NoAction
-[17:04:40.295] [bmv2] [T] [thread 79750] [0.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is false
-[17:04:40.295] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Pipeline 'ingress': end
-[17:04:40.295] [bmv2] [D] [thread 79750] [0.0] [cxt 0] Egress port is 0
-[17:04:40.295] [bmv2] [D] [thread 79751] [0.0] [cxt 0] Pipeline 'egress': start
-[17:04:40.295] [bmv2] [T] [thread 79751] [0.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is false
-[17:04:40.295] [bmv2] [D] [thread 79751] [0.0] [cxt 0] Pipeline 'egress': end
-[17:04:40.295] [bmv2] [D] [thread 79751] [0.0] [cxt 0] Deparser 'deparser': start
-[17:04:40.295] [bmv2] [D] [thread 79751] [0.0] [cxt 0] Deparsing header 'ethernet'
-[17:04:40.295] [bmv2] [D] [thread 79751] [0.0] [cxt 0] Deparsing header 'ipv6'
-[17:04:40.295] [bmv2] [D] [thread 79751] [0.0] [cxt 0] Deparser 'deparser': end
-[17:04:40.295] [bmv2] [D] [thread 79755] [0.0] [cxt 0] Transmitting packet of size 90 out of port 0
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Processing packet received on port 2
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Parser 'parser': start
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Parser 'parser' entering state 'start'
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Extracting header 'ethernet'
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Parser state 'start': key is 86dd
-[17:04:40.557] [bmv2] [T] [thread 79750] [1.0] [cxt 0] Bytes parsed: 14
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Extracting header 'ipv6'
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Parser state 'parse_ipv6': key is 00
-[17:04:40.557] [bmv2] [T] [thread 79750] [1.0] [cxt 0] Bytes parsed: 54
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Parser 'parser': end
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Pipeline 'ingress': start
-[17:04:40.557] [bmv2] [T] [thread 79750] [1.0] [cxt 0] Applying table 'tbl_p4src226'
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Looking up key:
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Table 'MyIngress.forward': miss
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Action entry is NoAction - 
+[09:13:36.923] [bmv2] [T] [thread 2107] [1.0] [cxt 0] Action NoAction
+[09:13:36.923] [bmv2] [T] [thread 2107] [1.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is false
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Pipeline 'ingress': end
+[09:13:36.923] [bmv2] [D] [thread 2107] [1.0] [cxt 0] Egress port is 0
+[09:13:36.923] [bmv2] [D] [thread 2108] [1.0] [cxt 0] Pipeline 'egress': start
+[09:13:36.923] [bmv2] [T] [thread 2108] [1.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is false
+[09:13:36.923] [bmv2] [D] [thread 2108] [1.0] [cxt 0] Pipeline 'egress': end
+[09:13:36.923] [bmv2] [D] [thread 2108] [1.0] [cxt 0] Deparser 'deparser': start
+[09:13:36.923] [bmv2] [D] [thread 2108] [1.0] [cxt 0] Deparsing header 'ethernet'
+[09:13:36.923] [bmv2] [D] [thread 2108] [1.0] [cxt 0] Deparsing header 'ipv6'
+[09:13:36.923] [bmv2] [D] [thread 2108] [1.0] [cxt 0] Deparser 'deparser': end
+[09:13:36.923] [bmv2] [D] [thread 2112] [1.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Processing packet received on port 3
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Parser 'parser': start
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Extracting header 'ethernet'
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Parser state 'start': key is 86dd
+[09:13:36.927] [bmv2] [T] [thread 2107] [2.0] [cxt 0] Bytes parsed: 14
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Extracting header 'ipv6'
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Parser state 'parse_ipv6': key is 00
+[09:13:36.927] [bmv2] [T] [thread 2107] [2.0] [cxt 0] Bytes parsed: 54
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Parser 'parser': end
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Pipeline 'ingress': start
+[09:13:36.927] [bmv2] [T] [thread 2107] [2.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Looking up key:
 
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Table 'tbl_p4src226': miss
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Action entry is p4src226 - 
-[17:04:40.557] [bmv2] [T] [thread 79750] [1.0] [cxt 0] Action p4src226
-[17:04:40.557] [bmv2] [T] [thread 79750] [1.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
-[17:04:40.557] [bmv2] [T] [thread 79750] [1.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
-[17:04:40.557] [bmv2] [T] [thread 79750] [1.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is false
-[17:04:40.557] [bmv2] [T] [thread 79750] [1.0] [cxt 0] Applying table 'tbl_p4src248'
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Looking up key:
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Action entry is p4src226 - 
+[09:13:36.927] [bmv2] [T] [thread 2107] [2.0] [cxt 0] Action p4src226
+[09:13:36.927] [bmv2] [T] [thread 2107] [2.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:13:36.927] [bmv2] [T] [thread 2107] [2.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:13:36.927] [bmv2] [T] [thread 2107] [2.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is false
+[09:13:36.927] [bmv2] [T] [thread 2107] [2.0] [cxt 0] Applying table 'tbl_p4src248'
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Looking up key:
 
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Table 'tbl_p4src248': miss
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Action entry is p4src248 - 
-[17:04:40.557] [bmv2] [T] [thread 79750] [1.0] [cxt 0] Action p4src248
-[17:04:40.557] [bmv2] [T] [thread 79750] [1.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(248) Primitive meta.to_send_to_ipv6 = hdr.ipv6
-[17:04:40.557] [bmv2] [T] [thread 79750] [1.0] [cxt 0] Applying table 'MyIngress.forward'
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Looking up key:
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Table 'tbl_p4src248': miss
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Action entry is p4src248 - 
+[09:13:36.927] [bmv2] [T] [thread 2107] [2.0] [cxt 0] Action p4src248
+[09:13:36.927] [bmv2] [T] [thread 2107] [2.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(248) Primitive meta.to_send_to_ipv6 = hdr.ipv6
+[09:13:36.927] [bmv2] [T] [thread 2107] [2.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Looking up key:
 * meta.to_send_to_ipv6.Addr0: ff020000000000000000000000000016
 
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Table 'MyIngress.forward': miss
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Action entry is NoAction - 
-[17:04:40.557] [bmv2] [T] [thread 79750] [1.0] [cxt 0] Action NoAction
-[17:04:40.557] [bmv2] [T] [thread 79750] [1.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is false
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Pipeline 'ingress': end
-[17:04:40.557] [bmv2] [D] [thread 79750] [1.0] [cxt 0] Egress port is 0
-[17:04:40.557] [bmv2] [D] [thread 79751] [1.0] [cxt 0] Pipeline 'egress': start
-[17:04:40.557] [bmv2] [T] [thread 79751] [1.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is false
-[17:04:40.557] [bmv2] [D] [thread 79751] [1.0] [cxt 0] Pipeline 'egress': end
-[17:04:40.557] [bmv2] [D] [thread 79751] [1.0] [cxt 0] Deparser 'deparser': start
-[17:04:40.557] [bmv2] [D] [thread 79751] [1.0] [cxt 0] Deparsing header 'ethernet'
-[17:04:40.557] [bmv2] [D] [thread 79751] [1.0] [cxt 0] Deparsing header 'ipv6'
-[17:04:40.557] [bmv2] [D] [thread 79751] [1.0] [cxt 0] Deparser 'deparser': end
-[17:04:40.557] [bmv2] [D] [thread 79755] [1.0] [cxt 0] Transmitting packet of size 90 out of port 0
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Processing packet received on port 1
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Parser 'parser': start
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Parser 'parser' entering state 'start'
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Extracting header 'ethernet'
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Parser state 'start': key is 86dd
-[17:04:40.685] [bmv2] [T] [thread 79750] [2.0] [cxt 0] Bytes parsed: 14
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Extracting header 'ipv6'
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Parser state 'parse_ipv6': key is 00
-[17:04:40.685] [bmv2] [T] [thread 79750] [2.0] [cxt 0] Bytes parsed: 54
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Parser 'parser': end
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Pipeline 'ingress': start
-[17:04:40.685] [bmv2] [T] [thread 79750] [2.0] [cxt 0] Applying table 'tbl_p4src226'
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Looking up key:
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Table 'MyIngress.forward': miss
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Action entry is NoAction - 
+[09:13:36.927] [bmv2] [T] [thread 2107] [2.0] [cxt 0] Action NoAction
+[09:13:36.927] [bmv2] [T] [thread 2107] [2.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is false
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Pipeline 'ingress': end
+[09:13:36.927] [bmv2] [D] [thread 2107] [2.0] [cxt 0] Egress port is 0
+[09:13:36.927] [bmv2] [D] [thread 2108] [2.0] [cxt 0] Pipeline 'egress': start
+[09:13:36.927] [bmv2] [T] [thread 2108] [2.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is false
+[09:13:36.927] [bmv2] [D] [thread 2108] [2.0] [cxt 0] Pipeline 'egress': end
+[09:13:36.927] [bmv2] [D] [thread 2108] [2.0] [cxt 0] Deparser 'deparser': start
+[09:13:36.927] [bmv2] [D] [thread 2108] [2.0] [cxt 0] Deparsing header 'ethernet'
+[09:13:36.927] [bmv2] [D] [thread 2108] [2.0] [cxt 0] Deparsing header 'ipv6'
+[09:13:36.927] [bmv2] [D] [thread 2108] [2.0] [cxt 0] Deparser 'deparser': end
+[09:13:36.927] [bmv2] [D] [thread 2112] [2.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Processing packet received on port 1
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Parser 'parser': start
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Extracting header 'ethernet'
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Parser state 'start': key is 86dd
+[09:13:37.083] [bmv2] [T] [thread 2107] [3.0] [cxt 0] Bytes parsed: 14
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Extracting header 'ipv6'
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Parser state 'parse_ipv6': key is 00
+[09:13:37.083] [bmv2] [T] [thread 2107] [3.0] [cxt 0] Bytes parsed: 54
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Parser 'parser': end
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Pipeline 'ingress': start
+[09:13:37.083] [bmv2] [T] [thread 2107] [3.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Looking up key:
 
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Table 'tbl_p4src226': miss
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Action entry is p4src226 - 
-[17:04:40.685] [bmv2] [T] [thread 79750] [2.0] [cxt 0] Action p4src226
-[17:04:40.685] [bmv2] [T] [thread 79750] [2.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
-[17:04:40.685] [bmv2] [T] [thread 79750] [2.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
-[17:04:40.685] [bmv2] [T] [thread 79750] [2.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is false
-[17:04:40.685] [bmv2] [T] [thread 79750] [2.0] [cxt 0] Applying table 'tbl_p4src248'
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Looking up key:
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Action entry is p4src226 - 
+[09:13:37.083] [bmv2] [T] [thread 2107] [3.0] [cxt 0] Action p4src226
+[09:13:37.083] [bmv2] [T] [thread 2107] [3.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:13:37.083] [bmv2] [T] [thread 2107] [3.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:13:37.083] [bmv2] [T] [thread 2107] [3.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is false
+[09:13:37.083] [bmv2] [T] [thread 2107] [3.0] [cxt 0] Applying table 'tbl_p4src248'
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Looking up key:
 
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Table 'tbl_p4src248': miss
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Action entry is p4src248 - 
-[17:04:40.685] [bmv2] [T] [thread 79750] [2.0] [cxt 0] Action p4src248
-[17:04:40.685] [bmv2] [T] [thread 79750] [2.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(248) Primitive meta.to_send_to_ipv6 = hdr.ipv6
-[17:04:40.685] [bmv2] [T] [thread 79750] [2.0] [cxt 0] Applying table 'MyIngress.forward'
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Looking up key:
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Table 'tbl_p4src248': miss
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Action entry is p4src248 - 
+[09:13:37.083] [bmv2] [T] [thread 2107] [3.0] [cxt 0] Action p4src248
+[09:13:37.083] [bmv2] [T] [thread 2107] [3.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(248) Primitive meta.to_send_to_ipv6 = hdr.ipv6
+[09:13:37.083] [bmv2] [T] [thread 2107] [3.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Looking up key:
 * meta.to_send_to_ipv6.Addr0: ff020000000000000000000000000016
 
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Table 'MyIngress.forward': miss
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Action entry is NoAction - 
-[17:04:40.685] [bmv2] [T] [thread 79750] [2.0] [cxt 0] Action NoAction
-[17:04:40.685] [bmv2] [T] [thread 79750] [2.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is false
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Pipeline 'ingress': end
-[17:04:40.685] [bmv2] [D] [thread 79750] [2.0] [cxt 0] Egress port is 0
-[17:04:40.685] [bmv2] [D] [thread 79751] [2.0] [cxt 0] Pipeline 'egress': start
-[17:04:40.685] [bmv2] [T] [thread 79751] [2.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is false
-[17:04:40.685] [bmv2] [D] [thread 79751] [2.0] [cxt 0] Pipeline 'egress': end
-[17:04:40.685] [bmv2] [D] [thread 79751] [2.0] [cxt 0] Deparser 'deparser': start
-[17:04:40.685] [bmv2] [D] [thread 79751] [2.0] [cxt 0] Deparsing header 'ethernet'
-[17:04:40.685] [bmv2] [D] [thread 79751] [2.0] [cxt 0] Deparsing header 'ipv6'
-[17:04:40.685] [bmv2] [D] [thread 79751] [2.0] [cxt 0] Deparser 'deparser': end
-[17:04:40.686] [bmv2] [D] [thread 79755] [2.0] [cxt 0] Transmitting packet of size 90 out of port 0
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Processing packet received on port 1
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Parser 'parser': start
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Parser 'parser' entering state 'start'
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Extracting header 'ethernet'
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Parser state 'start': key is 86dd
-[17:04:40.845] [bmv2] [T] [thread 79750] [3.0] [cxt 0] Bytes parsed: 14
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Extracting header 'ipv6'
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Parser state 'parse_ipv6': key is 00
-[17:04:40.845] [bmv2] [T] [thread 79750] [3.0] [cxt 0] Bytes parsed: 54
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Parser 'parser': end
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Pipeline 'ingress': start
-[17:04:40.845] [bmv2] [T] [thread 79750] [3.0] [cxt 0] Applying table 'tbl_p4src226'
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Looking up key:
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Table 'MyIngress.forward': miss
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Action entry is NoAction - 
+[09:13:37.083] [bmv2] [T] [thread 2107] [3.0] [cxt 0] Action NoAction
+[09:13:37.083] [bmv2] [T] [thread 2107] [3.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is false
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Pipeline 'ingress': end
+[09:13:37.083] [bmv2] [D] [thread 2107] [3.0] [cxt 0] Egress port is 0
+[09:13:37.083] [bmv2] [D] [thread 2108] [3.0] [cxt 0] Pipeline 'egress': start
+[09:13:37.083] [bmv2] [T] [thread 2108] [3.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is false
+[09:13:37.083] [bmv2] [D] [thread 2108] [3.0] [cxt 0] Pipeline 'egress': end
+[09:13:37.083] [bmv2] [D] [thread 2108] [3.0] [cxt 0] Deparser 'deparser': start
+[09:13:37.083] [bmv2] [D] [thread 2108] [3.0] [cxt 0] Deparsing header 'ethernet'
+[09:13:37.083] [bmv2] [D] [thread 2108] [3.0] [cxt 0] Deparsing header 'ipv6'
+[09:13:37.083] [bmv2] [D] [thread 2108] [3.0] [cxt 0] Deparser 'deparser': end
+[09:13:37.083] [bmv2] [D] [thread 2112] [3.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Processing packet received on port 2
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Parser 'parser': start
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Extracting header 'ethernet'
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Parser state 'start': key is 86dd
+[09:13:37.147] [bmv2] [T] [thread 2107] [4.0] [cxt 0] Bytes parsed: 14
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Extracting header 'ipv6'
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Parser state 'parse_ipv6': key is 00
+[09:13:37.147] [bmv2] [T] [thread 2107] [4.0] [cxt 0] Bytes parsed: 54
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Parser 'parser': end
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Pipeline 'ingress': start
+[09:13:37.147] [bmv2] [T] [thread 2107] [4.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Looking up key:
 
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Table 'tbl_p4src226': miss
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Action entry is p4src226 - 
-[17:04:40.845] [bmv2] [T] [thread 79750] [3.0] [cxt 0] Action p4src226
-[17:04:40.845] [bmv2] [T] [thread 79750] [3.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
-[17:04:40.845] [bmv2] [T] [thread 79750] [3.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
-[17:04:40.845] [bmv2] [T] [thread 79750] [3.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is false
-[17:04:40.845] [bmv2] [T] [thread 79750] [3.0] [cxt 0] Applying table 'tbl_p4src248'
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Looking up key:
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Action entry is p4src226 - 
+[09:13:37.147] [bmv2] [T] [thread 2107] [4.0] [cxt 0] Action p4src226
+[09:13:37.147] [bmv2] [T] [thread 2107] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:13:37.147] [bmv2] [T] [thread 2107] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:13:37.147] [bmv2] [T] [thread 2107] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is false
+[09:13:37.147] [bmv2] [T] [thread 2107] [4.0] [cxt 0] Applying table 'tbl_p4src248'
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Looking up key:
 
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Table 'tbl_p4src248': miss
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Action entry is p4src248 - 
-[17:04:40.845] [bmv2] [T] [thread 79750] [3.0] [cxt 0] Action p4src248
-[17:04:40.845] [bmv2] [T] [thread 79750] [3.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(248) Primitive meta.to_send_to_ipv6 = hdr.ipv6
-[17:04:40.845] [bmv2] [T] [thread 79750] [3.0] [cxt 0] Applying table 'MyIngress.forward'
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Looking up key:
-* meta.to_send_to_ipv6.Addr0: ff0200000000000000000001ff07f00e
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Table 'tbl_p4src248': miss
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Action entry is p4src248 - 
+[09:13:37.147] [bmv2] [T] [thread 2107] [4.0] [cxt 0] Action p4src248
+[09:13:37.147] [bmv2] [T] [thread 2107] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(248) Primitive meta.to_send_to_ipv6 = hdr.ipv6
+[09:13:37.147] [bmv2] [T] [thread 2107] [4.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Looking up key:
+* meta.to_send_to_ipv6.Addr0: ff0200000000000000000001ffc79bdc
 
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Table 'MyIngress.forward': miss
-[17:04:40.845] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Action entry is NoAction - 
-[17:04:40.845] [bmv2] [T] [thread 79750] [3.0] [cxt 0] Action NoAction
-[17:04:40.845] [bmv2] [T] [thread 79750] [3.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is false
-[17:04:40.846] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Pipeline 'ingress': end
-[17:04:40.846] [bmv2] [D] [thread 79750] [3.0] [cxt 0] Egress port is 0
-[17:04:40.846] [bmv2] [D] [thread 79751] [3.0] [cxt 0] Pipeline 'egress': start
-[17:04:40.846] [bmv2] [T] [thread 79751] [3.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is false
-[17:04:40.846] [bmv2] [D] [thread 79751] [3.0] [cxt 0] Pipeline 'egress': end
-[17:04:40.846] [bmv2] [D] [thread 79751] [3.0] [cxt 0] Deparser 'deparser': start
-[17:04:40.846] [bmv2] [D] [thread 79751] [3.0] [cxt 0] Deparsing header 'ethernet'
-[17:04:40.846] [bmv2] [D] [thread 79751] [3.0] [cxt 0] Deparsing header 'ipv6'
-[17:04:40.846] [bmv2] [D] [thread 79751] [3.0] [cxt 0] Deparser 'deparser': end
-[17:04:40.846] [bmv2] [D] [thread 79755] [3.0] [cxt 0] Transmitting packet of size 86 out of port 0
-[17:04:41.065] [bmv2] [T] [thread 79929] bm_get_config
-[17:04:41.068] [bmv2] [T] [thread 79929] bm_table_add_entry
-[17:04:41.068] [bmv2] [D] [thread 79929] Entry 0 added to table 'MyIngress.add_our_telemetry'
-[17:04:41.068] [bmv2] [D] [thread 79929] Dumping entry 0
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Table 'MyIngress.forward': miss
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Action entry is NoAction - 
+[09:13:37.147] [bmv2] [T] [thread 2107] [4.0] [cxt 0] Action NoAction
+[09:13:37.147] [bmv2] [T] [thread 2107] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is false
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Pipeline 'ingress': end
+[09:13:37.147] [bmv2] [D] [thread 2107] [4.0] [cxt 0] Egress port is 0
+[09:13:37.147] [bmv2] [D] [thread 2108] [4.0] [cxt 0] Pipeline 'egress': start
+[09:13:37.147] [bmv2] [T] [thread 2108] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is false
+[09:13:37.147] [bmv2] [D] [thread 2108] [4.0] [cxt 0] Pipeline 'egress': end
+[09:13:37.147] [bmv2] [D] [thread 2108] [4.0] [cxt 0] Deparser 'deparser': start
+[09:13:37.147] [bmv2] [D] [thread 2108] [4.0] [cxt 0] Deparsing header 'ethernet'
+[09:13:37.147] [bmv2] [D] [thread 2108] [4.0] [cxt 0] Deparsing header 'ipv6'
+[09:13:37.147] [bmv2] [D] [thread 2108] [4.0] [cxt 0] Deparser 'deparser': end
+[09:13:37.147] [bmv2] [D] [thread 2112] [4.0] [cxt 0] Transmitting packet of size 86 out of port 0
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Processing packet received on port 1
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Parser 'parser': start
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Extracting header 'ethernet'
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Parser state 'start': key is 86dd
+[09:13:37.243] [bmv2] [T] [thread 2107] [5.0] [cxt 0] Bytes parsed: 14
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Extracting header 'ipv6'
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Parser state 'parse_ipv6': key is 00
+[09:13:37.243] [bmv2] [T] [thread 2107] [5.0] [cxt 0] Bytes parsed: 54
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Parser 'parser': end
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Pipeline 'ingress': start
+[09:13:37.243] [bmv2] [T] [thread 2107] [5.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Looking up key:
+
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Action entry is p4src226 - 
+[09:13:37.243] [bmv2] [T] [thread 2107] [5.0] [cxt 0] Action p4src226
+[09:13:37.243] [bmv2] [T] [thread 2107] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:13:37.243] [bmv2] [T] [thread 2107] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:13:37.243] [bmv2] [T] [thread 2107] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is false
+[09:13:37.243] [bmv2] [T] [thread 2107] [5.0] [cxt 0] Applying table 'tbl_p4src248'
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Looking up key:
+
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Table 'tbl_p4src248': miss
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Action entry is p4src248 - 
+[09:13:37.243] [bmv2] [T] [thread 2107] [5.0] [cxt 0] Action p4src248
+[09:13:37.243] [bmv2] [T] [thread 2107] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(248) Primitive meta.to_send_to_ipv6 = hdr.ipv6
+[09:13:37.243] [bmv2] [T] [thread 2107] [5.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Looking up key:
+* meta.to_send_to_ipv6.Addr0: ff0200000000000000000001ffced36e
+
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Table 'MyIngress.forward': miss
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Action entry is NoAction - 
+[09:13:37.243] [bmv2] [T] [thread 2107] [5.0] [cxt 0] Action NoAction
+[09:13:37.243] [bmv2] [T] [thread 2107] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is false
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Pipeline 'ingress': end
+[09:13:37.243] [bmv2] [D] [thread 2107] [5.0] [cxt 0] Egress port is 0
+[09:13:37.243] [bmv2] [D] [thread 2108] [5.0] [cxt 0] Pipeline 'egress': start
+[09:13:37.243] [bmv2] [T] [thread 2108] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is false
+[09:13:37.243] [bmv2] [D] [thread 2108] [5.0] [cxt 0] Pipeline 'egress': end
+[09:13:37.243] [bmv2] [D] [thread 2108] [5.0] [cxt 0] Deparser 'deparser': start
+[09:13:37.243] [bmv2] [D] [thread 2108] [5.0] [cxt 0] Deparsing header 'ethernet'
+[09:13:37.243] [bmv2] [D] [thread 2108] [5.0] [cxt 0] Deparsing header 'ipv6'
+[09:13:37.243] [bmv2] [D] [thread 2108] [5.0] [cxt 0] Deparser 'deparser': end
+[09:13:37.243] [bmv2] [D] [thread 2112] [5.0] [cxt 0] Transmitting packet of size 86 out of port 0
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Processing packet received on port 2
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Parser 'parser': start
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Extracting header 'ethernet'
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Parser state 'start': key is 86dd
+[09:13:37.340] [bmv2] [T] [thread 2107] [6.0] [cxt 0] Bytes parsed: 14
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Extracting header 'ipv6'
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Parser state 'parse_ipv6': key is 00
+[09:13:37.340] [bmv2] [T] [thread 2107] [6.0] [cxt 0] Bytes parsed: 54
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Parser 'parser': end
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Pipeline 'ingress': start
+[09:13:37.340] [bmv2] [T] [thread 2107] [6.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Looking up key:
+
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Action entry is p4src226 - 
+[09:13:37.340] [bmv2] [T] [thread 2107] [6.0] [cxt 0] Action p4src226
+[09:13:37.340] [bmv2] [T] [thread 2107] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:13:37.340] [bmv2] [T] [thread 2107] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:13:37.340] [bmv2] [T] [thread 2107] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is false
+[09:13:37.340] [bmv2] [T] [thread 2107] [6.0] [cxt 0] Applying table 'tbl_p4src248'
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Looking up key:
+
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Table 'tbl_p4src248': miss
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Action entry is p4src248 - 
+[09:13:37.340] [bmv2] [T] [thread 2107] [6.0] [cxt 0] Action p4src248
+[09:13:37.340] [bmv2] [T] [thread 2107] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(248) Primitive meta.to_send_to_ipv6 = hdr.ipv6
+[09:13:37.340] [bmv2] [T] [thread 2107] [6.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Looking up key:
+* meta.to_send_to_ipv6.Addr0: ff0200000000000000000001ffc820ae
+
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Table 'MyIngress.forward': miss
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Action entry is NoAction - 
+[09:13:37.340] [bmv2] [T] [thread 2107] [6.0] [cxt 0] Action NoAction
+[09:13:37.340] [bmv2] [T] [thread 2107] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is false
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Pipeline 'ingress': end
+[09:13:37.340] [bmv2] [D] [thread 2107] [6.0] [cxt 0] Egress port is 0
+[09:13:37.340] [bmv2] [D] [thread 2108] [6.0] [cxt 0] Pipeline 'egress': start
+[09:13:37.340] [bmv2] [T] [thread 2108] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is false
+[09:13:37.340] [bmv2] [D] [thread 2108] [6.0] [cxt 0] Pipeline 'egress': end
+[09:13:37.340] [bmv2] [D] [thread 2108] [6.0] [cxt 0] Deparser 'deparser': start
+[09:13:37.340] [bmv2] [D] [thread 2108] [6.0] [cxt 0] Deparsing header 'ethernet'
+[09:13:37.340] [bmv2] [D] [thread 2108] [6.0] [cxt 0] Deparsing header 'ipv6'
+[09:13:37.340] [bmv2] [D] [thread 2108] [6.0] [cxt 0] Deparser 'deparser': end
+[09:13:37.340] [bmv2] [D] [thread 2112] [6.0] [cxt 0] Transmitting packet of size 86 out of port 0
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Processing packet received on port 1
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Parser 'parser': start
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Extracting header 'ethernet'
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Parser state 'start': key is 86dd
+[09:13:37.371] [bmv2] [T] [thread 2107] [7.0] [cxt 0] Bytes parsed: 14
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Extracting header 'ipv6'
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Parser state 'parse_ipv6': key is 00
+[09:13:37.371] [bmv2] [T] [thread 2107] [7.0] [cxt 0] Bytes parsed: 54
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Parser 'parser': end
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Pipeline 'ingress': start
+[09:13:37.371] [bmv2] [T] [thread 2107] [7.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Looking up key:
+
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Action entry is p4src226 - 
+[09:13:37.371] [bmv2] [T] [thread 2107] [7.0] [cxt 0] Action p4src226
+[09:13:37.371] [bmv2] [T] [thread 2107] [7.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:13:37.371] [bmv2] [T] [thread 2107] [7.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:13:37.371] [bmv2] [T] [thread 2107] [7.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is false
+[09:13:37.371] [bmv2] [T] [thread 2107] [7.0] [cxt 0] Applying table 'tbl_p4src248'
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Looking up key:
+
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Table 'tbl_p4src248': miss
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Action entry is p4src248 - 
+[09:13:37.371] [bmv2] [T] [thread 2107] [7.0] [cxt 0] Action p4src248
+[09:13:37.371] [bmv2] [T] [thread 2107] [7.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(248) Primitive meta.to_send_to_ipv6 = hdr.ipv6
+[09:13:37.371] [bmv2] [T] [thread 2107] [7.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Looking up key:
+* meta.to_send_to_ipv6.Addr0: ff020000000000000000000000000016
+
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Table 'MyIngress.forward': miss
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Action entry is NoAction - 
+[09:13:37.371] [bmv2] [T] [thread 2107] [7.0] [cxt 0] Action NoAction
+[09:13:37.371] [bmv2] [T] [thread 2107] [7.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is false
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Pipeline 'ingress': end
+[09:13:37.371] [bmv2] [D] [thread 2107] [7.0] [cxt 0] Egress port is 0
+[09:13:37.371] [bmv2] [D] [thread 2108] [7.0] [cxt 0] Pipeline 'egress': start
+[09:13:37.371] [bmv2] [T] [thread 2108] [7.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is false
+[09:13:37.371] [bmv2] [D] [thread 2108] [7.0] [cxt 0] Pipeline 'egress': end
+[09:13:37.371] [bmv2] [D] [thread 2108] [7.0] [cxt 0] Deparser 'deparser': start
+[09:13:37.371] [bmv2] [D] [thread 2108] [7.0] [cxt 0] Deparsing header 'ethernet'
+[09:13:37.371] [bmv2] [D] [thread 2108] [7.0] [cxt 0] Deparsing header 'ipv6'
+[09:13:37.371] [bmv2] [D] [thread 2108] [7.0] [cxt 0] Deparser 'deparser': end
+[09:13:37.371] [bmv2] [D] [thread 2112] [7.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[09:13:37.467] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Processing packet received on port 2
+[09:13:37.467] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Parser 'parser': start
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Extracting header 'ethernet'
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Parser state 'start': key is 86dd
+[09:13:37.468] [bmv2] [T] [thread 2107] [8.0] [cxt 0] Bytes parsed: 14
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Extracting header 'ipv6'
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Parser state 'parse_ipv6': key is 00
+[09:13:37.468] [bmv2] [T] [thread 2107] [8.0] [cxt 0] Bytes parsed: 54
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Parser 'parser': end
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Pipeline 'ingress': start
+[09:13:37.468] [bmv2] [T] [thread 2107] [8.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Looking up key:
+
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Action entry is p4src226 - 
+[09:13:37.468] [bmv2] [T] [thread 2107] [8.0] [cxt 0] Action p4src226
+[09:13:37.468] [bmv2] [T] [thread 2107] [8.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:13:37.468] [bmv2] [T] [thread 2107] [8.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:13:37.468] [bmv2] [T] [thread 2107] [8.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is false
+[09:13:37.468] [bmv2] [T] [thread 2107] [8.0] [cxt 0] Applying table 'tbl_p4src248'
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Looking up key:
+
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Table 'tbl_p4src248': miss
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Action entry is p4src248 - 
+[09:13:37.468] [bmv2] [T] [thread 2107] [8.0] [cxt 0] Action p4src248
+[09:13:37.468] [bmv2] [T] [thread 2107] [8.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(248) Primitive meta.to_send_to_ipv6 = hdr.ipv6
+[09:13:37.468] [bmv2] [T] [thread 2107] [8.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Looking up key:
+* meta.to_send_to_ipv6.Addr0: ff020000000000000000000000000016
+
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Table 'MyIngress.forward': miss
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Action entry is NoAction - 
+[09:13:37.468] [bmv2] [T] [thread 2107] [8.0] [cxt 0] Action NoAction
+[09:13:37.468] [bmv2] [T] [thread 2107] [8.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is false
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Pipeline 'ingress': end
+[09:13:37.468] [bmv2] [D] [thread 2107] [8.0] [cxt 0] Egress port is 0
+[09:13:37.468] [bmv2] [D] [thread 2108] [8.0] [cxt 0] Pipeline 'egress': start
+[09:13:37.468] [bmv2] [T] [thread 2108] [8.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is false
+[09:13:37.468] [bmv2] [D] [thread 2108] [8.0] [cxt 0] Pipeline 'egress': end
+[09:13:37.468] [bmv2] [D] [thread 2108] [8.0] [cxt 0] Deparser 'deparser': start
+[09:13:37.468] [bmv2] [D] [thread 2108] [8.0] [cxt 0] Deparsing header 'ethernet'
+[09:13:37.468] [bmv2] [D] [thread 2108] [8.0] [cxt 0] Deparsing header 'ipv6'
+[09:13:37.468] [bmv2] [D] [thread 2108] [8.0] [cxt 0] Deparser 'deparser': end
+[09:13:37.468] [bmv2] [D] [thread 2112] [8.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[09:13:37.723] [bmv2] [T] [thread 2278] bm_get_config
+[09:13:37.726] [bmv2] [T] [thread 2278] bm_table_add_entry
+[09:13:37.726] [bmv2] [D] [thread 2278] Entry 0 added to table 'MyIngress.add_our_telemetry'
+[09:13:37.726] [bmv2] [D] [thread 2278] Dumping entry 0
 Match key:
 * hdr.srh_end[0].addr.Addr0: EXACT     00000000000000000000000000010001
 Action entry: MyIngress.addMetadata - 1,
 
-[17:04:41.068] [bmv2] [T] [thread 79929] bm_table_add_entry
-[17:04:41.068] [bmv2] [D] [thread 79929] Entry 0 added to table 'MyIngress.forward'
-[17:04:41.068] [bmv2] [D] [thread 79929] Dumping entry 0
+[09:13:37.727] [bmv2] [T] [thread 2278] bm_table_add_entry
+[09:13:37.727] [bmv2] [D] [thread 2278] Entry 0 added to table 'MyIngress.forward'
+[09:13:37.727] [bmv2] [D] [thread 2278] Dumping entry 0
 Match key:
 * meta.to_send_to_ipv6.Addr0: EXACT     00000000000000000000000000000001
 Action entry: MyIngress.setEgress - 3,
 
-[17:04:41.069] [bmv2] [T] [thread 79929] bm_table_add_entry
-[17:04:41.069] [bmv2] [D] [thread 79929] Entry 1 added to table 'MyIngress.forward'
-[17:04:41.069] [bmv2] [D] [thread 79929] Dumping entry 1
+[09:13:37.727] [bmv2] [T] [thread 2278] bm_table_add_entry
+[09:13:37.727] [bmv2] [D] [thread 2278] Entry 1 added to table 'MyIngress.forward'
+[09:13:37.727] [bmv2] [D] [thread 2278] Dumping entry 1
 Match key:
 * meta.to_send_to_ipv6.Addr0: EXACT     00000000000000000000000000000002
 Action entry: MyIngress.setEgress - 1,
 
-[17:04:41.069] [bmv2] [T] [thread 79929] bm_table_add_entry
-[17:04:41.069] [bmv2] [D] [thread 79929] Entry 2 added to table 'MyIngress.forward'
-[17:04:41.069] [bmv2] [D] [thread 79929] Dumping entry 2
+[09:13:37.727] [bmv2] [T] [thread 2278] bm_table_add_entry
+[09:13:37.727] [bmv2] [D] [thread 2278] Entry 2 added to table 'MyIngress.forward'
+[09:13:37.727] [bmv2] [D] [thread 2278] Dumping entry 2
 Match key:
 * meta.to_send_to_ipv6.Addr0: EXACT     00000000000000000000000000010002
 Action entry: MyIngress.setEgress - 1,
 
-[17:04:41.069] [bmv2] [T] [thread 79929] bm_table_add_entry
-[17:04:41.069] [bmv2] [D] [thread 79929] Entry 3 added to table 'MyIngress.forward'
-[17:04:41.069] [bmv2] [D] [thread 79929] Dumping entry 3
+[09:13:37.727] [bmv2] [T] [thread 2278] bm_table_add_entry
+[09:13:37.727] [bmv2] [D] [thread 2278] Entry 3 added to table 'MyIngress.forward'
+[09:13:37.727] [bmv2] [D] [thread 2278] Dumping entry 3
 Match key:
 * meta.to_send_to_ipv6.Addr0: EXACT     00000000000000000000000000010003
 Action entry: MyIngress.setEgress - 1,
 
-[17:04:41.069] [bmv2] [T] [thread 79929] bm_table_add_entry
-[17:04:41.069] [bmv2] [D] [thread 79929] Entry 4 added to table 'MyIngress.forward'
-[17:04:41.069] [bmv2] [D] [thread 79929] Dumping entry 4
+[09:13:37.727] [bmv2] [T] [thread 2278] bm_table_add_entry
+[09:13:37.727] [bmv2] [D] [thread 2278] Entry 4 added to table 'MyIngress.forward'
+[09:13:37.727] [bmv2] [D] [thread 2278] Dumping entry 4
 Match key:
 * meta.to_send_to_ipv6.Addr0: EXACT     00000000000000000000000000010004
 Action entry: MyIngress.setEgress - 1,
 
-[17:04:41.069] [bmv2] [T] [thread 79929] bm_table_add_entry
-[17:04:41.069] [bmv2] [D] [thread 79929] Entry 5 added to table 'MyIngress.forward'
-[17:04:41.069] [bmv2] [D] [thread 79929] Dumping entry 5
+[09:13:37.728] [bmv2] [T] [thread 2278] bm_table_add_entry
+[09:13:37.728] [bmv2] [D] [thread 2278] Entry 5 added to table 'MyIngress.forward'
+[09:13:37.728] [bmv2] [D] [thread 2278] Dumping entry 5
 Match key:
 * meta.to_send_to_ipv6.Addr0: EXACT     00000000000000000000000000010005
 Action entry: MyIngress.setEgress - 1,
 
-[17:04:41.070] [bmv2] [T] [thread 79929] bm_table_add_entry
-[17:04:41.070] [bmv2] [D] [thread 79929] Entry 6 added to table 'MyIngress.forward'
-[17:04:41.070] [bmv2] [D] [thread 79929] Dumping entry 6
+[09:13:37.728] [bmv2] [T] [thread 2278] bm_table_add_entry
+[09:13:37.728] [bmv2] [D] [thread 2278] Entry 6 added to table 'MyIngress.forward'
+[09:13:37.728] [bmv2] [D] [thread 2278] Dumping entry 6
 Match key:
 * meta.to_send_to_ipv6.Addr0: EXACT     00000000000000000000000000010006
 Action entry: MyIngress.setEgress - 2,
 
-[17:05:46.836] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Processing packet received on port 3
-[17:05:46.836] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser 'parser': start
-[17:05:46.836] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser 'parser' entering state 'start'
-[17:05:46.836] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
-[17:05:46.836] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Extracting header 'ethernet'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser state 'start': key is 7fff
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Bytes parsed: 14
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser 'parser' entering state 'parse_int_beg'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 1
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Extracting header 'int_beg'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser set: setting field 'scalars.metadata._matadata_to_parse3' from field 'int_beg.hop_ml' (1)
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser state 'parse_int_beg': key is 01
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Bytes parsed: 18
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser 'parser' entering state 'parse_int_end'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Extracting to header stack 0, next header is 7
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser set: setting field 'scalars.metadata._matadata_to_parse3' from expression, new value is 0
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser state 'parse_int_end': key is 00
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Bytes parsed: 28
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Extracting header 'ipv6'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser state 'parse_ipv6': key is 01
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Bytes parsed: 68
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser 'parser' entering state 'parse_srh_beg'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Extracting header 'srh_beg'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from field 'srh_beg.segments_left' (3)
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser state 'parse_srh_beg': key is 03
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Bytes parsed: 76
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Extracting to header stack 1, next header is 19
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 2
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser state 'parse_srh_end': key is 02
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Bytes parsed: 92
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Extracting to header stack 1, next header is 20
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 1
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser state 'parse_srh_end': key is 01
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Bytes parsed: 108
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Extracting to header stack 1, next header is 21
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 0
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser state 'parse_srh_end': key is 00
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Bytes parsed: 124
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Parser 'parser': end
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Pipeline 'ingress': start
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Applying table 'tbl_p4src226'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Looking up key:
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Processing packet received on port 3
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser 'parser': start
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Extracting header 'ethernet'
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser state 'start': key is 7fff
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Bytes parsed: 14
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser 'parser' entering state 'parse_int_beg'
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 1
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Extracting header 'int_beg'
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser set: setting field 'scalars.metadata._matadata_to_parse3' from field 'int_beg.hop_ml' (0)
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser state 'parse_int_beg': key is 00
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Bytes parsed: 18
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Extracting header 'ipv6'
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser state 'parse_ipv6': key is 01
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Bytes parsed: 58
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser 'parser' entering state 'parse_srh_beg'
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Extracting header 'srh_beg'
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from field 'srh_beg.segments_left' (3)
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser state 'parse_srh_beg': key is 03
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Bytes parsed: 66
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Extracting to header stack 1, next header is 19
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 2
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser state 'parse_srh_end': key is 02
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Bytes parsed: 82
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Extracting to header stack 1, next header is 20
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 1
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser state 'parse_srh_end': key is 01
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Bytes parsed: 98
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Extracting to header stack 1, next header is 21
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 0
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser state 'parse_srh_end': key is 00
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Bytes parsed: 114
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Parser 'parser': end
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Pipeline 'ingress': start
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Looking up key:
 
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Table 'tbl_p4src226': miss
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Action entry is p4src226 - 
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Action p4src226
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is true
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Applying table 'tbl_p4src215'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Looking up key:
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Action entry is p4src226 - 
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Action p4src226
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is true
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Applying table 'tbl_p4src215'
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Looking up key:
 
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Table 'tbl_p4src215': miss
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Action entry is p4src215 - 
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Action p4src215
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(215) Primitive hdr.srh_end[0]
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Applying table 'MyIngress.add_our_telemetry'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Looking up key:
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Table 'tbl_p4src215': miss
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Action entry is p4src215 - 
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Action p4src215
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(215) Primitive hdr.srh_end[0]
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Applying table 'MyIngress.add_our_telemetry'
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Looking up key:
 * hdr.srh_end[0].addr.Addr0: 00000000000000000000000000010001
 
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Table 'MyIngress.add_our_telemetry': hit with handle 0
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Dumping entry 0
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Table 'MyIngress.add_our_telemetry': hit with handle 0
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Dumping entry 0
 Match key:
 * hdr.srh_end[0].addr.Addr0: EXACT     00000000000000000000000000010001
 Action entry: MyIngress.addMetadata - 1,
 
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Action entry is MyIngress.addMetadata - 1,
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Action MyIngress.addMetadata
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(201) Primitive hdr.srh_end.pop_front(1)
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(202) Primitive hdr.srh_beg.segments_left = hdr.srh_beg.segments_left - 1
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(203) Primitive meta.have_processed = 1
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(205) Primitive hdr.int_beg.hop_ml = hdr.int_beg.hop_ml + 1
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(206) Primitive hdr.int_end.push_front(1)
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(207) Primitive hdr.int_end[0].setValid()
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Primitive (no source info)
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(236) Condition "hdr.srh_beg.segments_left == 0" (node_6) is false
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Applying table 'tbl_p4src245'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Looking up key:
+[09:14:30.324] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Action entry is MyIngress.addMetadata - 1,
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Action MyIngress.addMetadata
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(201) Primitive hdr.srh_end.pop_front(1)
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(202) Primitive hdr.srh_beg.segments_left = hdr.srh_beg.segments_left - 1
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(203) Primitive meta.have_processed = 1
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(205) Primitive hdr.int_beg.hop_ml = hdr.int_beg.hop_ml + 1
+[09:14:30.324] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(206) Primitive hdr.int_end.push_front(1)
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(207) Primitive hdr.int_end[0].setValid()
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Primitive (no source info)
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(236) Condition "hdr.srh_beg.segments_left == 0" (node_6) is false
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Applying table 'tbl_p4src245'
+[09:14:30.325] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Looking up key:
 
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Table 'tbl_p4src245': miss
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Action entry is p4src245 - 
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Action p4src245
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(245) Primitive meta.to_send_to_ipv6 = hdr.srh_end[0]
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Applying table 'MyIngress.forward'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Looking up key:
+[09:14:30.325] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Table 'tbl_p4src245': miss
+[09:14:30.325] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Action entry is p4src245 - 
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Action p4src245
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(245) Primitive meta.to_send_to_ipv6 = hdr.srh_end[0]
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:14:30.325] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Looking up key:
 * meta.to_send_to_ipv6.Addr0: 00000000000000000000000000010006
 
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Table 'MyIngress.forward': hit with handle 6
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Dumping entry 6
+[09:14:30.325] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Table 'MyIngress.forward': hit with handle 6
+[09:14:30.325] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Dumping entry 6
 Match key:
 * meta.to_send_to_ipv6.Addr0: EXACT     00000000000000000000000000010006
 Action entry: MyIngress.setEgress - 2,
 
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Action entry is MyIngress.setEgress - 2,
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Action MyIngress.setEgress
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(185) Primitive standard_metadata.egress_spec = port
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is true
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(252) Condition "hdr.int_beg.instruction_bitmap & 0b00000000010 != 0" (node_12) is true
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Applying table 'tbl_p4src253'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Looking up key:
+[09:14:30.325] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Action entry is MyIngress.setEgress - 2,
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Action MyIngress.setEgress
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(185) Primitive standard_metadata.egress_spec = port
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is true
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(252) Condition "hdr.int_beg.instruction_bitmap & 0b00000000010 != 0" (node_12) is true
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Applying table 'tbl_p4src253'
+[09:14:30.325] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Looking up key:
 
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Table 'tbl_p4src253': miss
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Action entry is p4src253 - 
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Action p4src253
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(253) Primitive hdr.int_end[0].in_port_id = standard_metadata.ingress_port
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(255) Condition "hdr.int_beg.instruction_bitmap & 0b00000000100 != 0" (node_14) is true
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Applying table 'tbl_p4src256'
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Looking up key:
+[09:14:30.325] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Table 'tbl_p4src253': miss
+[09:14:30.325] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Action entry is p4src253 - 
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Action p4src253
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(253) Primitive hdr.int_end[0].in_port_id = standard_metadata.ingress_port
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(255) Condition "hdr.int_beg.instruction_bitmap & 0b00000000100 != 0" (node_14) is true
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Applying table 'tbl_p4src256'
+[09:14:30.325] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Looking up key:
 
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Table 'tbl_p4src256': miss
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Action entry is p4src256 - 
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] Action p4src256
-[17:05:46.837] [bmv2] [T] [thread 79750] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(256) Primitive hdr.int_end[0].e_port_id = standard_metadata.egress_spec
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Pipeline 'ingress': end
-[17:05:46.837] [bmv2] [D] [thread 79750] [4.0] [cxt 0] Egress port is 2
-[17:05:46.837] [bmv2] [D] [thread 79753] [4.0] [cxt 0] Pipeline 'egress': start
-[17:05:46.837] [bmv2] [T] [thread 79753] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is true
-[17:05:46.837] [bmv2] [T] [thread 79753] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(272) Condition "hdr.int_beg.instruction_bitmap & 0b00000001000 != 0" (node_19) is true
-[17:05:46.837] [bmv2] [T] [thread 79753] [4.0] [cxt 0] Applying table 'tbl_p4src273'
-[17:05:46.837] [bmv2] [D] [thread 79753] [4.0] [cxt 0] Looking up key:
+[09:14:30.325] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Table 'tbl_p4src256': miss
+[09:14:30.325] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Action entry is p4src256 - 
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] Action p4src256
+[09:14:30.325] [bmv2] [T] [thread 2107] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(256) Primitive hdr.int_end[0].e_port_id = standard_metadata.egress_spec
+[09:14:30.325] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Pipeline 'ingress': end
+[09:14:30.325] [bmv2] [D] [thread 2107] [9.0] [cxt 0] Egress port is 2
+[09:14:30.325] [bmv2] [D] [thread 2110] [9.0] [cxt 0] Pipeline 'egress': start
+[09:14:30.325] [bmv2] [T] [thread 2110] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is true
+[09:14:30.325] [bmv2] [T] [thread 2110] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(272) Condition "hdr.int_beg.instruction_bitmap & 0b00000001000 != 0" (node_19) is true
+[09:14:30.325] [bmv2] [T] [thread 2110] [9.0] [cxt 0] Applying table 'tbl_p4src273'
+[09:14:30.325] [bmv2] [D] [thread 2110] [9.0] [cxt 0] Looking up key:
 
-[17:05:46.837] [bmv2] [D] [thread 79753] [4.0] [cxt 0] Table 'tbl_p4src273': miss
-[17:05:46.837] [bmv2] [D] [thread 79753] [4.0] [cxt 0] Action entry is p4src273 - 
-[17:05:46.837] [bmv2] [T] [thread 79753] [4.0] [cxt 0] Action p4src273
-[17:05:46.837] [bmv2] [T] [thread 79753] [4.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(273) Primitive hdr.int_end[0].processed_time = standard_metadata.egress_global_timestamp - meta.ingress_timestamp
-[17:05:46.837] [bmv2] [D] [thread 79753] [4.0] [cxt 0] Pipeline 'egress': end
-[17:05:46.837] [bmv2] [D] [thread 79753] [4.0] [cxt 0] Deparser 'deparser': start
-[17:05:46.837] [bmv2] [D] [thread 79753] [4.0] [cxt 0] Deparsing header 'ethernet'
-[17:05:46.838] [bmv2] [D] [thread 79753] [4.0] [cxt 0] Deparsing header 'int_beg'
-[17:05:46.838] [bmv2] [D] [thread 79753] [4.0] [cxt 0] Deparsing header 'int_end[0]'
-[17:05:46.838] [bmv2] [D] [thread 79753] [4.0] [cxt 0] Deparsing header 'int_end[1]'
-[17:05:46.838] [bmv2] [D] [thread 79753] [4.0] [cxt 0] Deparsing header 'ipv6'
-[17:05:46.838] [bmv2] [D] [thread 79753] [4.0] [cxt 0] Deparsing header 'srh_beg'
-[17:05:46.838] [bmv2] [D] [thread 79753] [4.0] [cxt 0] Deparsing header 'srh_end[0]'
-[17:05:46.838] [bmv2] [D] [thread 79753] [4.0] [cxt 0] Deparsing header 'srh_end[1]'
-[17:05:46.838] [bmv2] [D] [thread 79753] [4.0] [cxt 0] Deparser 'deparser': end
-[17:05:46.838] [bmv2] [D] [thread 79755] [4.0] [cxt 0] Transmitting packet of size 118 out of port 2
-[17:08:14.922] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Processing packet received on port 3
-[17:08:14.922] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser 'parser': start
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser 'parser' entering state 'start'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Extracting header 'ethernet'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser state 'start': key is 7fff
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Bytes parsed: 14
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser 'parser' entering state 'parse_int_beg'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 1
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Extracting header 'int_beg'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser set: setting field 'scalars.metadata._matadata_to_parse3' from field 'int_beg.hop_ml' (0)
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser state 'parse_int_beg': key is 00
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Bytes parsed: 18
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Extracting header 'ipv6'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser state 'parse_ipv6': key is 01
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Bytes parsed: 58
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser 'parser' entering state 'parse_srh_beg'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Extracting header 'srh_beg'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from field 'srh_beg.segments_left' (3)
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser state 'parse_srh_beg': key is 03
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Bytes parsed: 66
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Extracting to header stack 1, next header is 19
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 2
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser state 'parse_srh_end': key is 02
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Bytes parsed: 82
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Extracting to header stack 1, next header is 20
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 1
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser state 'parse_srh_end': key is 01
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Bytes parsed: 98
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Extracting to header stack 1, next header is 21
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 0
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser state 'parse_srh_end': key is 00
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Bytes parsed: 114
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Parser 'parser': end
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Pipeline 'ingress': start
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Applying table 'tbl_p4src226'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Looking up key:
+[09:14:30.325] [bmv2] [D] [thread 2110] [9.0] [cxt 0] Table 'tbl_p4src273': miss
+[09:14:30.325] [bmv2] [D] [thread 2110] [9.0] [cxt 0] Action entry is p4src273 - 
+[09:14:30.325] [bmv2] [T] [thread 2110] [9.0] [cxt 0] Action p4src273
+[09:14:30.325] [bmv2] [T] [thread 2110] [9.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(273) Primitive hdr.int_end[0].processed_time = standard_metadata.egress_global_timestamp - meta.ingress_timestamp
+[09:14:30.325] [bmv2] [D] [thread 2110] [9.0] [cxt 0] Pipeline 'egress': end
+[09:14:30.325] [bmv2] [D] [thread 2110] [9.0] [cxt 0] Deparser 'deparser': start
+[09:14:30.325] [bmv2] [D] [thread 2110] [9.0] [cxt 0] Deparsing header 'ethernet'
+[09:14:30.325] [bmv2] [D] [thread 2110] [9.0] [cxt 0] Deparsing header 'int_beg'
+[09:14:30.325] [bmv2] [D] [thread 2110] [9.0] [cxt 0] Deparsing header 'int_end[0]'
+[09:14:30.325] [bmv2] [D] [thread 2110] [9.0] [cxt 0] Deparsing header 'ipv6'
+[09:14:30.325] [bmv2] [D] [thread 2110] [9.0] [cxt 0] Deparsing header 'srh_beg'
+[09:14:30.325] [bmv2] [D] [thread 2110] [9.0] [cxt 0] Deparsing header 'srh_end[0]'
+[09:14:30.325] [bmv2] [D] [thread 2110] [9.0] [cxt 0] Deparsing header 'srh_end[1]'
+[09:14:30.325] [bmv2] [D] [thread 2110] [9.0] [cxt 0] Deparser 'deparser': end
+[09:14:30.325] [bmv2] [D] [thread 2112] [9.0] [cxt 0] Transmitting packet of size 108 out of port 2
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Processing packet received on port 3
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser 'parser': start
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Extracting header 'ethernet'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser state 'start': key is 7fff
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Bytes parsed: 14
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser 'parser' entering state 'parse_int_beg'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 1
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Extracting header 'int_beg'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser set: setting field 'scalars.metadata._matadata_to_parse3' from field 'int_beg.hop_ml' (0)
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser state 'parse_int_beg': key is 00
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Bytes parsed: 18
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Extracting header 'ipv6'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser state 'parse_ipv6': key is 01
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Bytes parsed: 58
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser 'parser' entering state 'parse_srh_beg'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Extracting header 'srh_beg'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from field 'srh_beg.segments_left' (3)
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser state 'parse_srh_beg': key is 03
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Bytes parsed: 66
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Extracting to header stack 1, next header is 19
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 2
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser state 'parse_srh_end': key is 02
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Bytes parsed: 82
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Extracting to header stack 1, next header is 20
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 1
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser state 'parse_srh_end': key is 01
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Bytes parsed: 98
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Extracting to header stack 1, next header is 21
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 0
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser state 'parse_srh_end': key is 00
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Bytes parsed: 114
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Parser 'parser': end
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Pipeline 'ingress': start
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Looking up key:
 
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Table 'tbl_p4src226': miss
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Action entry is p4src226 - 
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Action p4src226
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is true
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Applying table 'tbl_p4src215'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Looking up key:
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Action entry is p4src226 - 
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Action p4src226
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is true
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Applying table 'tbl_p4src215'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Looking up key:
 
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Table 'tbl_p4src215': miss
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Action entry is p4src215 - 
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Action p4src215
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(215) Primitive hdr.srh_end[0]
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Applying table 'MyIngress.add_our_telemetry'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Looking up key:
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Table 'tbl_p4src215': miss
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Action entry is p4src215 - 
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Action p4src215
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(215) Primitive hdr.srh_end[0]
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Applying table 'MyIngress.add_our_telemetry'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Looking up key:
 * hdr.srh_end[0].addr.Addr0: 00000000000000000000000000010001
 
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Table 'MyIngress.add_our_telemetry': hit with handle 0
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Dumping entry 0
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Table 'MyIngress.add_our_telemetry': hit with handle 0
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Dumping entry 0
 Match key:
 * hdr.srh_end[0].addr.Addr0: EXACT     00000000000000000000000000010001
 Action entry: MyIngress.addMetadata - 1,
 
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Action entry is MyIngress.addMetadata - 1,
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Action MyIngress.addMetadata
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(201) Primitive hdr.srh_end.pop_front(1)
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(202) Primitive hdr.srh_beg.segments_left = hdr.srh_beg.segments_left - 1
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(203) Primitive meta.have_processed = 1
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(205) Primitive hdr.int_beg.hop_ml = hdr.int_beg.hop_ml + 1
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(206) Primitive hdr.int_end.push_front(1)
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(207) Primitive hdr.int_end[0].setValid()
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Primitive (no source info)
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(236) Condition "hdr.srh_beg.segments_left == 0" (node_6) is false
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Applying table 'tbl_p4src245'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Looking up key:
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Action entry is MyIngress.addMetadata - 1,
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Action MyIngress.addMetadata
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(201) Primitive hdr.srh_end.pop_front(1)
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(202) Primitive hdr.srh_beg.segments_left = hdr.srh_beg.segments_left - 1
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(203) Primitive meta.have_processed = 1
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(205) Primitive hdr.int_beg.hop_ml = hdr.int_beg.hop_ml + 1
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(206) Primitive hdr.int_end.push_front(1)
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(207) Primitive hdr.int_end[0].setValid()
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Primitive (no source info)
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(236) Condition "hdr.srh_beg.segments_left == 0" (node_6) is false
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Applying table 'tbl_p4src245'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Looking up key:
 
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Table 'tbl_p4src245': miss
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Action entry is p4src245 - 
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Action p4src245
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(245) Primitive meta.to_send_to_ipv6 = hdr.srh_end[0]
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Applying table 'MyIngress.forward'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Looking up key:
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Table 'tbl_p4src245': miss
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Action entry is p4src245 - 
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Action p4src245
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(245) Primitive meta.to_send_to_ipv6 = hdr.srh_end[0]
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Looking up key:
 * meta.to_send_to_ipv6.Addr0: 00000000000000000000000000010006
 
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Table 'MyIngress.forward': hit with handle 6
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Dumping entry 6
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Table 'MyIngress.forward': hit with handle 6
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Dumping entry 6
 Match key:
 * meta.to_send_to_ipv6.Addr0: EXACT     00000000000000000000000000010006
 Action entry: MyIngress.setEgress - 2,
 
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Action entry is MyIngress.setEgress - 2,
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Action MyIngress.setEgress
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(185) Primitive standard_metadata.egress_spec = port
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is true
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(252) Condition "hdr.int_beg.instruction_bitmap & 0b00000000010 != 0" (node_12) is true
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Applying table 'tbl_p4src253'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Looking up key:
+[09:15:20.374] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Action entry is MyIngress.setEgress - 2,
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Action MyIngress.setEgress
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(185) Primitive standard_metadata.egress_spec = port
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is true
+[09:15:20.374] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(252) Condition "hdr.int_beg.instruction_bitmap & 0b00000000010 != 0" (node_12) is true
+[09:15:20.375] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Applying table 'tbl_p4src253'
+[09:15:20.375] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Looking up key:
 
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Table 'tbl_p4src253': miss
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Action entry is p4src253 - 
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Action p4src253
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(253) Primitive hdr.int_end[0].in_port_id = standard_metadata.ingress_port
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(255) Condition "hdr.int_beg.instruction_bitmap & 0b00000000100 != 0" (node_14) is true
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Applying table 'tbl_p4src256'
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Looking up key:
+[09:15:20.375] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Table 'tbl_p4src253': miss
+[09:15:20.375] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Action entry is p4src253 - 
+[09:15:20.375] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Action p4src253
+[09:15:20.375] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(253) Primitive hdr.int_end[0].in_port_id = standard_metadata.ingress_port
+[09:15:20.375] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(255) Condition "hdr.int_beg.instruction_bitmap & 0b00000000100 != 0" (node_14) is true
+[09:15:20.375] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Applying table 'tbl_p4src256'
+[09:15:20.375] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Looking up key:
 
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Table 'tbl_p4src256': miss
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Action entry is p4src256 - 
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] Action p4src256
-[17:08:14.923] [bmv2] [T] [thread 79750] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(256) Primitive hdr.int_end[0].e_port_id = standard_metadata.egress_spec
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Pipeline 'ingress': end
-[17:08:14.923] [bmv2] [D] [thread 79750] [5.0] [cxt 0] Egress port is 2
-[17:08:14.924] [bmv2] [D] [thread 79753] [5.0] [cxt 0] Pipeline 'egress': start
-[17:08:14.924] [bmv2] [T] [thread 79753] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is true
-[17:08:14.924] [bmv2] [T] [thread 79753] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(272) Condition "hdr.int_beg.instruction_bitmap & 0b00000001000 != 0" (node_19) is true
-[17:08:14.924] [bmv2] [T] [thread 79753] [5.0] [cxt 0] Applying table 'tbl_p4src273'
-[17:08:14.924] [bmv2] [D] [thread 79753] [5.0] [cxt 0] Looking up key:
+[09:15:20.375] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Table 'tbl_p4src256': miss
+[09:15:20.375] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Action entry is p4src256 - 
+[09:15:20.375] [bmv2] [T] [thread 2107] [10.0] [cxt 0] Action p4src256
+[09:15:20.375] [bmv2] [T] [thread 2107] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(256) Primitive hdr.int_end[0].e_port_id = standard_metadata.egress_spec
+[09:15:20.375] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Pipeline 'ingress': end
+[09:15:20.375] [bmv2] [D] [thread 2107] [10.0] [cxt 0] Egress port is 2
+[09:15:20.375] [bmv2] [D] [thread 2110] [10.0] [cxt 0] Pipeline 'egress': start
+[09:15:20.375] [bmv2] [T] [thread 2110] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is true
+[09:15:20.375] [bmv2] [T] [thread 2110] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(272) Condition "hdr.int_beg.instruction_bitmap & 0b00000001000 != 0" (node_19) is true
+[09:15:20.375] [bmv2] [T] [thread 2110] [10.0] [cxt 0] Applying table 'tbl_p4src273'
+[09:15:20.375] [bmv2] [D] [thread 2110] [10.0] [cxt 0] Looking up key:
 
-[17:08:14.924] [bmv2] [D] [thread 79753] [5.0] [cxt 0] Table 'tbl_p4src273': miss
-[17:08:14.924] [bmv2] [D] [thread 79753] [5.0] [cxt 0] Action entry is p4src273 - 
-[17:08:14.924] [bmv2] [T] [thread 79753] [5.0] [cxt 0] Action p4src273
-[17:08:14.924] [bmv2] [T] [thread 79753] [5.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(273) Primitive hdr.int_end[0].processed_time = standard_metadata.egress_global_timestamp - meta.ingress_timestamp
-[17:08:14.924] [bmv2] [D] [thread 79753] [5.0] [cxt 0] Pipeline 'egress': end
-[17:08:14.924] [bmv2] [D] [thread 79753] [5.0] [cxt 0] Deparser 'deparser': start
-[17:08:14.924] [bmv2] [D] [thread 79753] [5.0] [cxt 0] Deparsing header 'ethernet'
-[17:08:14.924] [bmv2] [D] [thread 79753] [5.0] [cxt 0] Deparsing header 'int_beg'
-[17:08:14.924] [bmv2] [D] [thread 79753] [5.0] [cxt 0] Deparsing header 'int_end[0]'
-[17:08:14.924] [bmv2] [D] [thread 79753] [5.0] [cxt 0] Deparsing header 'ipv6'
-[17:08:14.924] [bmv2] [D] [thread 79753] [5.0] [cxt 0] Deparsing header 'srh_beg'
-[17:08:14.924] [bmv2] [D] [thread 79753] [5.0] [cxt 0] Deparsing header 'srh_end[0]'
-[17:08:14.924] [bmv2] [D] [thread 79753] [5.0] [cxt 0] Deparsing header 'srh_end[1]'
-[17:08:14.924] [bmv2] [D] [thread 79753] [5.0] [cxt 0] Deparser 'deparser': end
-[17:08:14.924] [bmv2] [D] [thread 79755] [5.0] [cxt 0] Transmitting packet of size 108 out of port 2
-[17:11:26.062] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Processing packet received on port 3
-[17:11:26.062] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser 'parser': start
-[17:11:26.062] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser 'parser' entering state 'start'
-[17:11:26.062] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
-[17:11:26.062] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Extracting header 'ethernet'
-[17:11:26.062] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser state 'start': key is 7fff
-[17:11:26.062] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Bytes parsed: 14
-[17:11:26.062] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser 'parser' entering state 'parse_int_beg'
-[17:11:26.062] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 1
-[17:11:26.062] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Extracting header 'int_beg'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser set: setting field 'scalars.metadata._matadata_to_parse3' from field 'int_beg.hop_ml' (0)
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser state 'parse_int_beg': key is 00
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Bytes parsed: 18
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Extracting header 'ipv6'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser state 'parse_ipv6': key is 01
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Bytes parsed: 58
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser 'parser' entering state 'parse_srh_beg'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Extracting header 'srh_beg'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from field 'srh_beg.segments_left' (6)
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser state 'parse_srh_beg': key is 06
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Bytes parsed: 66
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Extracting to header stack 1, next header is 19
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 5
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser state 'parse_srh_end': key is 05
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Bytes parsed: 82
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Extracting to header stack 1, next header is 20
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 4
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser state 'parse_srh_end': key is 04
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Bytes parsed: 98
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Extracting to header stack 1, next header is 21
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 3
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser state 'parse_srh_end': key is 03
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Bytes parsed: 114
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Extracting to header stack 1, next header is 22
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 2
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser state 'parse_srh_end': key is 02
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Bytes parsed: 130
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Extracting to header stack 1, next header is 23
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 1
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser state 'parse_srh_end': key is 01
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Bytes parsed: 146
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Extracting to header stack 1, next header is 24
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 0
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser state 'parse_srh_end': key is 00
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Bytes parsed: 162
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Parser 'parser': end
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Pipeline 'ingress': start
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Applying table 'tbl_p4src226'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Looking up key:
+[09:15:20.375] [bmv2] [D] [thread 2110] [10.0] [cxt 0] Table 'tbl_p4src273': miss
+[09:15:20.375] [bmv2] [D] [thread 2110] [10.0] [cxt 0] Action entry is p4src273 - 
+[09:15:20.375] [bmv2] [T] [thread 2110] [10.0] [cxt 0] Action p4src273
+[09:15:20.375] [bmv2] [T] [thread 2110] [10.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(273) Primitive hdr.int_end[0].processed_time = standard_metadata.egress_global_timestamp - meta.ingress_timestamp
+[09:15:20.375] [bmv2] [D] [thread 2110] [10.0] [cxt 0] Pipeline 'egress': end
+[09:15:20.375] [bmv2] [D] [thread 2110] [10.0] [cxt 0] Deparser 'deparser': start
+[09:15:20.375] [bmv2] [D] [thread 2110] [10.0] [cxt 0] Deparsing header 'ethernet'
+[09:15:20.375] [bmv2] [D] [thread 2110] [10.0] [cxt 0] Deparsing header 'int_beg'
+[09:15:20.375] [bmv2] [D] [thread 2110] [10.0] [cxt 0] Deparsing header 'int_end[0]'
+[09:15:20.375] [bmv2] [D] [thread 2110] [10.0] [cxt 0] Deparsing header 'ipv6'
+[09:15:20.375] [bmv2] [D] [thread 2110] [10.0] [cxt 0] Deparsing header 'srh_beg'
+[09:15:20.375] [bmv2] [D] [thread 2110] [10.0] [cxt 0] Deparsing header 'srh_end[0]'
+[09:15:20.375] [bmv2] [D] [thread 2110] [10.0] [cxt 0] Deparsing header 'srh_end[1]'
+[09:15:20.375] [bmv2] [D] [thread 2110] [10.0] [cxt 0] Deparser 'deparser': end
+[09:15:20.375] [bmv2] [D] [thread 2112] [10.0] [cxt 0] Transmitting packet of size 108 out of port 2
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Processing packet received on port 3
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser 'parser': start
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Extracting header 'ethernet'
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser state 'start': key is 7fff
+[09:15:40.330] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Bytes parsed: 14
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser 'parser' entering state 'parse_int_beg'
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 1
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Extracting header 'int_beg'
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser set: setting field 'scalars.metadata._matadata_to_parse3' from field 'int_beg.hop_ml' (0)
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser state 'parse_int_beg': key is 00
+[09:15:40.330] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Bytes parsed: 18
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Extracting header 'ipv6'
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser state 'parse_ipv6': key is 01
+[09:15:40.330] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Bytes parsed: 58
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser 'parser' entering state 'parse_srh_beg'
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Extracting header 'srh_beg'
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from field 'srh_beg.segments_left' (3)
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser state 'parse_srh_beg': key is 03
+[09:15:40.330] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Bytes parsed: 66
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:15:40.330] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Extracting to header stack 1, next header is 19
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 2
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser state 'parse_srh_end': key is 02
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Bytes parsed: 82
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Extracting to header stack 1, next header is 20
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 1
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser state 'parse_srh_end': key is 01
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Bytes parsed: 98
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Extracting to header stack 1, next header is 21
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 0
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser state 'parse_srh_end': key is 00
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Bytes parsed: 114
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Parser 'parser': end
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Pipeline 'ingress': start
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Looking up key:
 
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Table 'tbl_p4src226': miss
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Action entry is p4src226 - 
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Action p4src226
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is true
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Applying table 'tbl_p4src215'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Looking up key:
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Action entry is p4src226 - 
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Action p4src226
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is true
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Applying table 'tbl_p4src215'
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Looking up key:
 
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Table 'tbl_p4src215': miss
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Action entry is p4src215 - 
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Action p4src215
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(215) Primitive hdr.srh_end[0]
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Applying table 'MyIngress.add_our_telemetry'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Looking up key:
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Table 'tbl_p4src215': miss
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Action entry is p4src215 - 
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Action p4src215
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(215) Primitive hdr.srh_end[0]
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Applying table 'MyIngress.add_our_telemetry'
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Looking up key:
 * hdr.srh_end[0].addr.Addr0: 00000000000000000000000000010001
 
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Table 'MyIngress.add_our_telemetry': hit with handle 0
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Dumping entry 0
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Table 'MyIngress.add_our_telemetry': hit with handle 0
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Dumping entry 0
 Match key:
 * hdr.srh_end[0].addr.Addr0: EXACT     00000000000000000000000000010001
 Action entry: MyIngress.addMetadata - 1,
 
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Action entry is MyIngress.addMetadata - 1,
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Action MyIngress.addMetadata
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(201) Primitive hdr.srh_end.pop_front(1)
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(202) Primitive hdr.srh_beg.segments_left = hdr.srh_beg.segments_left - 1
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(203) Primitive meta.have_processed = 1
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(205) Primitive hdr.int_beg.hop_ml = hdr.int_beg.hop_ml + 1
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(206) Primitive hdr.int_end.push_front(1)
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(207) Primitive hdr.int_end[0].setValid()
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Primitive (no source info)
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(236) Condition "hdr.srh_beg.segments_left == 0" (node_6) is false
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Applying table 'tbl_p4src245'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Looking up key:
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Action entry is MyIngress.addMetadata - 1,
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Action MyIngress.addMetadata
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(201) Primitive hdr.srh_end.pop_front(1)
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(202) Primitive hdr.srh_beg.segments_left = hdr.srh_beg.segments_left - 1
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(203) Primitive meta.have_processed = 1
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(205) Primitive hdr.int_beg.hop_ml = hdr.int_beg.hop_ml + 1
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(206) Primitive hdr.int_end.push_front(1)
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(207) Primitive hdr.int_end[0].setValid()
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Primitive (no source info)
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(236) Condition "hdr.srh_beg.segments_left == 0" (node_6) is false
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Applying table 'tbl_p4src245'
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Looking up key:
 
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Table 'tbl_p4src245': miss
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Action entry is p4src245 - 
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Action p4src245
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(245) Primitive meta.to_send_to_ipv6 = hdr.srh_end[0]
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Applying table 'MyIngress.forward'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Looking up key:
-* meta.to_send_to_ipv6.Addr0: 00000000000000000000000000010002
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Table 'tbl_p4src245': miss
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Action entry is p4src245 - 
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Action p4src245
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(245) Primitive meta.to_send_to_ipv6 = hdr.srh_end[0]
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Looking up key:
+* meta.to_send_to_ipv6.Addr0: 00000000000000000000000000010006
 
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Table 'MyIngress.forward': hit with handle 2
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Dumping entry 2
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Table 'MyIngress.forward': hit with handle 6
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Dumping entry 6
 Match key:
-* meta.to_send_to_ipv6.Addr0: EXACT     00000000000000000000000000010002
-Action entry: MyIngress.setEgress - 1,
+* meta.to_send_to_ipv6.Addr0: EXACT     00000000000000000000000000010006
+Action entry: MyIngress.setEgress - 2,
 
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Action entry is MyIngress.setEgress - 1,
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Action MyIngress.setEgress
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(185) Primitive standard_metadata.egress_spec = port
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is true
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(252) Condition "hdr.int_beg.instruction_bitmap & 0b00000000010 != 0" (node_12) is true
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Applying table 'tbl_p4src253'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Looking up key:
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Action entry is MyIngress.setEgress - 2,
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Action MyIngress.setEgress
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(185) Primitive standard_metadata.egress_spec = port
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is true
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(252) Condition "hdr.int_beg.instruction_bitmap & 0b00000000010 != 0" (node_12) is true
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Applying table 'tbl_p4src253'
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Looking up key:
 
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Table 'tbl_p4src253': miss
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Action entry is p4src253 - 
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Action p4src253
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(253) Primitive hdr.int_end[0].in_port_id = standard_metadata.ingress_port
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(255) Condition "hdr.int_beg.instruction_bitmap & 0b00000000100 != 0" (node_14) is true
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Applying table 'tbl_p4src256'
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Looking up key:
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Table 'tbl_p4src253': miss
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Action entry is p4src253 - 
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Action p4src253
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(253) Primitive hdr.int_end[0].in_port_id = standard_metadata.ingress_port
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(255) Condition "hdr.int_beg.instruction_bitmap & 0b00000000100 != 0" (node_14) is true
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Applying table 'tbl_p4src256'
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Looking up key:
 
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Table 'tbl_p4src256': miss
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Action entry is p4src256 - 
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] Action p4src256
-[17:11:26.063] [bmv2] [T] [thread 79750] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(256) Primitive hdr.int_end[0].e_port_id = standard_metadata.egress_spec
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Pipeline 'ingress': end
-[17:11:26.063] [bmv2] [D] [thread 79750] [6.0] [cxt 0] Egress port is 1
-[17:11:26.063] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Pipeline 'egress': start
-[17:11:26.063] [bmv2] [T] [thread 79752] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is true
-[17:11:26.063] [bmv2] [T] [thread 79752] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(272) Condition "hdr.int_beg.instruction_bitmap & 0b00000001000 != 0" (node_19) is true
-[17:11:26.063] [bmv2] [T] [thread 79752] [6.0] [cxt 0] Applying table 'tbl_p4src273'
-[17:11:26.063] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Looking up key:
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Table 'tbl_p4src256': miss
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Action entry is p4src256 - 
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] Action p4src256
+[09:15:40.331] [bmv2] [T] [thread 2107] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(256) Primitive hdr.int_end[0].e_port_id = standard_metadata.egress_spec
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Pipeline 'ingress': end
+[09:15:40.331] [bmv2] [D] [thread 2107] [11.0] [cxt 0] Egress port is 2
+[09:15:40.331] [bmv2] [D] [thread 2110] [11.0] [cxt 0] Pipeline 'egress': start
+[09:15:40.331] [bmv2] [T] [thread 2110] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is true
+[09:15:40.331] [bmv2] [T] [thread 2110] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(272) Condition "hdr.int_beg.instruction_bitmap & 0b00000001000 != 0" (node_19) is true
+[09:15:40.331] [bmv2] [T] [thread 2110] [11.0] [cxt 0] Applying table 'tbl_p4src273'
+[09:15:40.331] [bmv2] [D] [thread 2110] [11.0] [cxt 0] Looking up key:
 
-[17:11:26.063] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Table 'tbl_p4src273': miss
-[17:11:26.063] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Action entry is p4src273 - 
-[17:11:26.063] [bmv2] [T] [thread 79752] [6.0] [cxt 0] Action p4src273
-[17:11:26.063] [bmv2] [T] [thread 79752] [6.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(273) Primitive hdr.int_end[0].processed_time = standard_metadata.egress_global_timestamp - meta.ingress_timestamp
-[17:11:26.063] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Pipeline 'egress': end
-[17:11:26.063] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Deparser 'deparser': start
-[17:11:26.063] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Deparsing header 'ethernet'
-[17:11:26.063] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Deparsing header 'int_beg'
-[17:11:26.064] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Deparsing header 'int_end[0]'
-[17:11:26.064] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Deparsing header 'ipv6'
-[17:11:26.064] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Deparsing header 'srh_beg'
-[17:11:26.064] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Deparsing header 'srh_end[0]'
-[17:11:26.064] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Deparsing header 'srh_end[1]'
-[17:11:26.064] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Deparsing header 'srh_end[2]'
-[17:11:26.064] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Deparsing header 'srh_end[3]'
-[17:11:26.064] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Deparsing header 'srh_end[4]'
-[17:11:26.064] [bmv2] [D] [thread 79752] [6.0] [cxt 0] Deparser 'deparser': end
-[17:11:26.064] [bmv2] [D] [thread 79755] [6.0] [cxt 0] Transmitting packet of size 156 out of port 1
-open: No such file or directory
-open: No such file or directory
+[09:15:40.331] [bmv2] [D] [thread 2110] [11.0] [cxt 0] Table 'tbl_p4src273': miss
+[09:15:40.331] [bmv2] [D] [thread 2110] [11.0] [cxt 0] Action entry is p4src273 - 
+[09:15:40.331] [bmv2] [T] [thread 2110] [11.0] [cxt 0] Action p4src273
+[09:15:40.331] [bmv2] [T] [thread 2110] [11.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(273) Primitive hdr.int_end[0].processed_time = standard_metadata.egress_global_timestamp - meta.ingress_timestamp
+[09:15:40.331] [bmv2] [D] [thread 2110] [11.0] [cxt 0] Pipeline 'egress': end
+[09:15:40.331] [bmv2] [D] [thread 2110] [11.0] [cxt 0] Deparser 'deparser': start
+[09:15:40.331] [bmv2] [D] [thread 2110] [11.0] [cxt 0] Deparsing header 'ethernet'
+[09:15:40.331] [bmv2] [D] [thread 2110] [11.0] [cxt 0] Deparsing header 'int_beg'
+[09:15:40.331] [bmv2] [D] [thread 2110] [11.0] [cxt 0] Deparsing header 'int_end[0]'
+[09:15:40.331] [bmv2] [D] [thread 2110] [11.0] [cxt 0] Deparsing header 'ipv6'
+[09:15:40.331] [bmv2] [D] [thread 2110] [11.0] [cxt 0] Deparsing header 'srh_beg'
+[09:15:40.331] [bmv2] [D] [thread 2110] [11.0] [cxt 0] Deparsing header 'srh_end[0]'
+[09:15:40.331] [bmv2] [D] [thread 2110] [11.0] [cxt 0] Deparsing header 'srh_end[1]'
+[09:15:40.331] [bmv2] [D] [thread 2110] [11.0] [cxt 0] Deparser 'deparser': end
+[09:15:40.331] [bmv2] [D] [thread 2112] [11.0] [cxt 0] Transmitting packet of size 108 out of port 2
+[09:15:57.237] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Processing packet received on port 3
+[09:15:57.237] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser 'parser': start
+[09:15:57.237] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:15:57.237] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:15:57.237] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Extracting header 'ethernet'
+[09:15:57.237] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser state 'start': key is 7fff
+[09:15:57.237] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Bytes parsed: 14
+[09:15:57.237] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser 'parser' entering state 'parse_int_beg'
+[09:15:57.237] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 1
+[09:15:57.237] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Extracting header 'int_beg'
+[09:15:57.237] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser set: setting field 'scalars.metadata._matadata_to_parse3' from field 'int_beg.hop_ml' (0)
+[09:15:57.237] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser state 'parse_int_beg': key is 00
+[09:15:57.237] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Bytes parsed: 18
+[09:15:57.237] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:15:57.237] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Extracting header 'ipv6'
+[09:15:57.237] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser state 'parse_ipv6': key is 01
+[09:15:57.237] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Bytes parsed: 58
+[09:15:57.237] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser 'parser' entering state 'parse_srh_beg'
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Extracting header 'srh_beg'
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from field 'srh_beg.segments_left' (3)
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser state 'parse_srh_beg': key is 03
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Bytes parsed: 66
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Extracting to header stack 1, next header is 19
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 2
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser state 'parse_srh_end': key is 02
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Bytes parsed: 82
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Extracting to header stack 1, next header is 20
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 1
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser state 'parse_srh_end': key is 01
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Bytes parsed: 98
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Extracting to header stack 1, next header is 21
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 0
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser state 'parse_srh_end': key is 00
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Bytes parsed: 114
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Parser 'parser': end
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Pipeline 'ingress': start
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Looking up key:
+
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Action entry is p4src226 - 
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Action p4src226
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is true
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Applying table 'tbl_p4src215'
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Looking up key:
+
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Table 'tbl_p4src215': miss
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Action entry is p4src215 - 
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Action p4src215
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(215) Primitive hdr.srh_end[0]
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Applying table 'MyIngress.add_our_telemetry'
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Looking up key:
+* hdr.srh_end[0].addr.Addr0: 00000000000000000000000000010001
+
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Table 'MyIngress.add_our_telemetry': hit with handle 0
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.srh_end[0].addr.Addr0: EXACT     00000000000000000000000000010001
+Action entry: MyIngress.addMetadata - 1,
+
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Action entry is MyIngress.addMetadata - 1,
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Action MyIngress.addMetadata
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(201) Primitive hdr.srh_end.pop_front(1)
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(202) Primitive hdr.srh_beg.segments_left = hdr.srh_beg.segments_left - 1
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(203) Primitive meta.have_processed = 1
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(205) Primitive hdr.int_beg.hop_ml = hdr.int_beg.hop_ml + 1
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(206) Primitive hdr.int_end.push_front(1)
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(207) Primitive hdr.int_end[0].setValid()
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Primitive (no source info)
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(236) Condition "hdr.srh_beg.segments_left == 0" (node_6) is false
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Applying table 'tbl_p4src245'
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Looking up key:
+
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Table 'tbl_p4src245': miss
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Action entry is p4src245 - 
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Action p4src245
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(245) Primitive meta.to_send_to_ipv6 = hdr.srh_end[0]
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Looking up key:
+* meta.to_send_to_ipv6.Addr0: 00000000000000000000000000010006
+
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Table 'MyIngress.forward': hit with handle 6
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Dumping entry 6
+Match key:
+* meta.to_send_to_ipv6.Addr0: EXACT     00000000000000000000000000010006
+Action entry: MyIngress.setEgress - 2,
+
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Action entry is MyIngress.setEgress - 2,
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Action MyIngress.setEgress
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(185) Primitive standard_metadata.egress_spec = port
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is true
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(252) Condition "hdr.int_beg.instruction_bitmap & 0b00000000010 != 0" (node_12) is true
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Applying table 'tbl_p4src253'
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Looking up key:
+
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Table 'tbl_p4src253': miss
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Action entry is p4src253 - 
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Action p4src253
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(253) Primitive hdr.int_end[0].in_port_id = standard_metadata.ingress_port
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(255) Condition "hdr.int_beg.instruction_bitmap & 0b00000000100 != 0" (node_14) is true
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Applying table 'tbl_p4src256'
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Looking up key:
+
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Table 'tbl_p4src256': miss
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Action entry is p4src256 - 
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] Action p4src256
+[09:15:57.238] [bmv2] [T] [thread 2107] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(256) Primitive hdr.int_end[0].e_port_id = standard_metadata.egress_spec
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Pipeline 'ingress': end
+[09:15:57.238] [bmv2] [D] [thread 2107] [12.0] [cxt 0] Egress port is 2
+[09:15:57.238] [bmv2] [D] [thread 2110] [12.0] [cxt 0] Pipeline 'egress': start
+[09:15:57.238] [bmv2] [T] [thread 2110] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is true
+[09:15:57.238] [bmv2] [T] [thread 2110] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(272) Condition "hdr.int_beg.instruction_bitmap & 0b00000001000 != 0" (node_19) is true
+[09:15:57.238] [bmv2] [T] [thread 2110] [12.0] [cxt 0] Applying table 'tbl_p4src273'
+[09:15:57.238] [bmv2] [D] [thread 2110] [12.0] [cxt 0] Looking up key:
+
+[09:15:57.239] [bmv2] [D] [thread 2110] [12.0] [cxt 0] Table 'tbl_p4src273': miss
+[09:15:57.239] [bmv2] [D] [thread 2110] [12.0] [cxt 0] Action entry is p4src273 - 
+[09:15:57.239] [bmv2] [T] [thread 2110] [12.0] [cxt 0] Action p4src273
+[09:15:57.239] [bmv2] [T] [thread 2110] [12.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(273) Primitive hdr.int_end[0].processed_time = standard_metadata.egress_global_timestamp - meta.ingress_timestamp
+[09:15:57.239] [bmv2] [D] [thread 2110] [12.0] [cxt 0] Pipeline 'egress': end
+[09:15:57.239] [bmv2] [D] [thread 2110] [12.0] [cxt 0] Deparser 'deparser': start
+[09:15:57.239] [bmv2] [D] [thread 2110] [12.0] [cxt 0] Deparsing header 'ethernet'
+[09:15:57.239] [bmv2] [D] [thread 2110] [12.0] [cxt 0] Deparsing header 'int_beg'
+[09:15:57.239] [bmv2] [D] [thread 2110] [12.0] [cxt 0] Deparsing header 'int_end[0]'
+[09:15:57.239] [bmv2] [D] [thread 2110] [12.0] [cxt 0] Deparsing header 'ipv6'
+[09:15:57.239] [bmv2] [D] [thread 2110] [12.0] [cxt 0] Deparsing header 'srh_beg'
+[09:15:57.239] [bmv2] [D] [thread 2110] [12.0] [cxt 0] Deparsing header 'srh_end[0]'
+[09:15:57.239] [bmv2] [D] [thread 2110] [12.0] [cxt 0] Deparsing header 'srh_end[1]'
+[09:15:57.239] [bmv2] [D] [thread 2110] [12.0] [cxt 0] Deparser 'deparser': end
+[09:15:57.239] [bmv2] [D] [thread 2112] [12.0] [cxt 0] Transmitting packet of size 108 out of port 2
+[09:16:13.529] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Processing packet received on port 3
+[09:16:13.529] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser 'parser': start
+[09:16:13.529] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:16:13.529] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:16:13.529] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Extracting header 'ethernet'
+[09:16:13.529] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser state 'start': key is 7fff
+[09:16:13.529] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Bytes parsed: 14
+[09:16:13.529] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser 'parser' entering state 'parse_int_beg'
+[09:16:13.529] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 1
+[09:16:13.529] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Extracting header 'int_beg'
+[09:16:13.529] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser set: setting field 'scalars.metadata._matadata_to_parse3' from field 'int_beg.hop_ml' (0)
+[09:16:13.529] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser state 'parse_int_beg': key is 00
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Bytes parsed: 18
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Extracting header 'ipv6'
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser state 'parse_ipv6': key is 01
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Bytes parsed: 58
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser 'parser' entering state 'parse_srh_beg'
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Extracting header 'srh_beg'
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from field 'srh_beg.segments_left' (3)
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser state 'parse_srh_beg': key is 03
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Bytes parsed: 66
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Extracting to header stack 1, next header is 19
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 2
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser state 'parse_srh_end': key is 02
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Bytes parsed: 82
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Extracting to header stack 1, next header is 20
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 1
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser state 'parse_srh_end': key is 01
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Bytes parsed: 98
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Extracting to header stack 1, next header is 21
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 0
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser state 'parse_srh_end': key is 00
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Bytes parsed: 114
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Parser 'parser': end
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Pipeline 'ingress': start
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Looking up key:
+
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Action entry is p4src226 - 
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Action p4src226
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is true
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Applying table 'tbl_p4src215'
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Looking up key:
+
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Table 'tbl_p4src215': miss
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Action entry is p4src215 - 
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Action p4src215
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(215) Primitive hdr.srh_end[0]
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Applying table 'MyIngress.add_our_telemetry'
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Looking up key:
+* hdr.srh_end[0].addr.Addr0: 00000000000000000000000000010001
+
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Table 'MyIngress.add_our_telemetry': hit with handle 0
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.srh_end[0].addr.Addr0: EXACT     00000000000000000000000000010001
+Action entry: MyIngress.addMetadata - 1,
+
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Action entry is MyIngress.addMetadata - 1,
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Action MyIngress.addMetadata
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(201) Primitive hdr.srh_end.pop_front(1)
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(202) Primitive hdr.srh_beg.segments_left = hdr.srh_beg.segments_left - 1
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(203) Primitive meta.have_processed = 1
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(205) Primitive hdr.int_beg.hop_ml = hdr.int_beg.hop_ml + 1
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(206) Primitive hdr.int_end.push_front(1)
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(207) Primitive hdr.int_end[0].setValid()
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Primitive (no source info)
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(236) Condition "hdr.srh_beg.segments_left == 0" (node_6) is false
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Applying table 'tbl_p4src245'
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Looking up key:
+
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Table 'tbl_p4src245': miss
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Action entry is p4src245 - 
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Action p4src245
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(245) Primitive meta.to_send_to_ipv6 = hdr.srh_end[0]
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Looking up key:
+* meta.to_send_to_ipv6.Addr0: 00000000000000000000000000010006
+
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Table 'MyIngress.forward': hit with handle 6
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Dumping entry 6
+Match key:
+* meta.to_send_to_ipv6.Addr0: EXACT     00000000000000000000000000010006
+Action entry: MyIngress.setEgress - 2,
+
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Action entry is MyIngress.setEgress - 2,
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Action MyIngress.setEgress
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(185) Primitive standard_metadata.egress_spec = port
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is true
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(252) Condition "hdr.int_beg.instruction_bitmap & 0b00000000010 != 0" (node_12) is true
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Applying table 'tbl_p4src253'
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Looking up key:
+
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Table 'tbl_p4src253': miss
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Action entry is p4src253 - 
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Action p4src253
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(253) Primitive hdr.int_end[0].in_port_id = standard_metadata.ingress_port
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(255) Condition "hdr.int_beg.instruction_bitmap & 0b00000000100 != 0" (node_14) is true
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Applying table 'tbl_p4src256'
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Looking up key:
+
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Table 'tbl_p4src256': miss
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Action entry is p4src256 - 
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] Action p4src256
+[09:16:13.530] [bmv2] [T] [thread 2107] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(256) Primitive hdr.int_end[0].e_port_id = standard_metadata.egress_spec
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Pipeline 'ingress': end
+[09:16:13.530] [bmv2] [D] [thread 2107] [13.0] [cxt 0] Egress port is 2
+[09:16:13.530] [bmv2] [D] [thread 2110] [13.0] [cxt 0] Pipeline 'egress': start
+[09:16:13.530] [bmv2] [T] [thread 2110] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is true
+[09:16:13.530] [bmv2] [T] [thread 2110] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(272) Condition "hdr.int_beg.instruction_bitmap & 0b00000001000 != 0" (node_19) is true
+[09:16:13.530] [bmv2] [T] [thread 2110] [13.0] [cxt 0] Applying table 'tbl_p4src273'
+[09:16:13.530] [bmv2] [D] [thread 2110] [13.0] [cxt 0] Looking up key:
+
+[09:16:13.530] [bmv2] [D] [thread 2110] [13.0] [cxt 0] Table 'tbl_p4src273': miss
+[09:16:13.530] [bmv2] [D] [thread 2110] [13.0] [cxt 0] Action entry is p4src273 - 
+[09:16:13.530] [bmv2] [T] [thread 2110] [13.0] [cxt 0] Action p4src273
+[09:16:13.530] [bmv2] [T] [thread 2110] [13.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(273) Primitive hdr.int_end[0].processed_time = standard_metadata.egress_global_timestamp - meta.ingress_timestamp
+[09:16:13.531] [bmv2] [D] [thread 2110] [13.0] [cxt 0] Pipeline 'egress': end
+[09:16:13.531] [bmv2] [D] [thread 2110] [13.0] [cxt 0] Deparser 'deparser': start
+[09:16:13.531] [bmv2] [D] [thread 2110] [13.0] [cxt 0] Deparsing header 'ethernet'
+[09:16:13.531] [bmv2] [D] [thread 2110] [13.0] [cxt 0] Deparsing header 'int_beg'
+[09:16:13.531] [bmv2] [D] [thread 2110] [13.0] [cxt 0] Deparsing header 'int_end[0]'
+[09:16:13.531] [bmv2] [D] [thread 2110] [13.0] [cxt 0] Deparsing header 'ipv6'
+[09:16:13.531] [bmv2] [D] [thread 2110] [13.0] [cxt 0] Deparsing header 'srh_beg'
+[09:16:13.531] [bmv2] [D] [thread 2110] [13.0] [cxt 0] Deparsing header 'srh_end[0]'
+[09:16:13.531] [bmv2] [D] [thread 2110] [13.0] [cxt 0] Deparsing header 'srh_end[1]'
+[09:16:13.531] [bmv2] [D] [thread 2110] [13.0] [cxt 0] Deparser 'deparser': end
+[09:16:13.531] [bmv2] [D] [thread 2112] [13.0] [cxt 0] Transmitting packet of size 108 out of port 2
+[09:16:25.569] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Processing packet received on port 3
+[09:16:25.569] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser 'parser': start
+[09:16:25.569] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:16:25.569] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:16:25.569] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Extracting header 'ethernet'
+[09:16:25.569] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser state 'start': key is 7fff
+[09:16:25.569] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Bytes parsed: 14
+[09:16:25.569] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser 'parser' entering state 'parse_int_beg'
+[09:16:25.569] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 1
+[09:16:25.569] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Extracting header 'int_beg'
+[09:16:25.569] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser set: setting field 'scalars.metadata._matadata_to_parse3' from field 'int_beg.hop_ml' (0)
+[09:16:25.569] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser state 'parse_int_beg': key is 00
+[09:16:25.569] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Bytes parsed: 18
+[09:16:25.569] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:16:25.569] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Extracting header 'ipv6'
+[09:16:25.569] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser state 'parse_ipv6': key is 01
+[09:16:25.569] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Bytes parsed: 58
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser 'parser' entering state 'parse_srh_beg'
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Extracting header 'srh_beg'
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from field 'srh_beg.segments_left' (3)
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser state 'parse_srh_beg': key is 03
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Bytes parsed: 66
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Extracting to header stack 1, next header is 19
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 2
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser state 'parse_srh_end': key is 02
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Bytes parsed: 82
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Extracting to header stack 1, next header is 20
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 1
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser state 'parse_srh_end': key is 01
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Bytes parsed: 98
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Extracting to header stack 1, next header is 21
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 0
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser state 'parse_srh_end': key is 00
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Bytes parsed: 114
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Parser 'parser': end
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Pipeline 'ingress': start
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Looking up key:
+
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Action entry is p4src226 - 
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Action p4src226
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is true
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Applying table 'tbl_p4src215'
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Looking up key:
+
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Table 'tbl_p4src215': miss
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Action entry is p4src215 - 
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Action p4src215
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(215) Primitive hdr.srh_end[0]
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Applying table 'MyIngress.add_our_telemetry'
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Looking up key:
+* hdr.srh_end[0].addr.Addr0: 00000000000000000000000000010001
+
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Table 'MyIngress.add_our_telemetry': hit with handle 0
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.srh_end[0].addr.Addr0: EXACT     00000000000000000000000000010001
+Action entry: MyIngress.addMetadata - 1,
+
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Action entry is MyIngress.addMetadata - 1,
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Action MyIngress.addMetadata
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(201) Primitive hdr.srh_end.pop_front(1)
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(202) Primitive hdr.srh_beg.segments_left = hdr.srh_beg.segments_left - 1
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(203) Primitive meta.have_processed = 1
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(205) Primitive hdr.int_beg.hop_ml = hdr.int_beg.hop_ml + 1
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(206) Primitive hdr.int_end.push_front(1)
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(207) Primitive hdr.int_end[0].setValid()
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Primitive (no source info)
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(236) Condition "hdr.srh_beg.segments_left == 0" (node_6) is false
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Applying table 'tbl_p4src245'
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Looking up key:
+
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Table 'tbl_p4src245': miss
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Action entry is p4src245 - 
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Action p4src245
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(245) Primitive meta.to_send_to_ipv6 = hdr.srh_end[0]
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Looking up key:
+* meta.to_send_to_ipv6.Addr0: 00000000000000000000000000010006
+
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Table 'MyIngress.forward': hit with handle 6
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Dumping entry 6
+Match key:
+* meta.to_send_to_ipv6.Addr0: EXACT     00000000000000000000000000010006
+Action entry: MyIngress.setEgress - 2,
+
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Action entry is MyIngress.setEgress - 2,
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Action MyIngress.setEgress
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(185) Primitive standard_metadata.egress_spec = port
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is true
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(252) Condition "hdr.int_beg.instruction_bitmap & 0b00000000010 != 0" (node_12) is true
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Applying table 'tbl_p4src253'
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Looking up key:
+
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Table 'tbl_p4src253': miss
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Action entry is p4src253 - 
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Action p4src253
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(253) Primitive hdr.int_end[0].in_port_id = standard_metadata.ingress_port
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(255) Condition "hdr.int_beg.instruction_bitmap & 0b00000000100 != 0" (node_14) is true
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Applying table 'tbl_p4src256'
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Looking up key:
+
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Table 'tbl_p4src256': miss
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Action entry is p4src256 - 
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] Action p4src256
+[09:16:25.570] [bmv2] [T] [thread 2107] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(256) Primitive hdr.int_end[0].e_port_id = standard_metadata.egress_spec
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Pipeline 'ingress': end
+[09:16:25.570] [bmv2] [D] [thread 2107] [14.0] [cxt 0] Egress port is 2
+[09:16:25.570] [bmv2] [D] [thread 2110] [14.0] [cxt 0] Pipeline 'egress': start
+[09:16:25.570] [bmv2] [T] [thread 2110] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is true
+[09:16:25.570] [bmv2] [T] [thread 2110] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(272) Condition "hdr.int_beg.instruction_bitmap & 0b00000001000 != 0" (node_19) is true
+[09:16:25.570] [bmv2] [T] [thread 2110] [14.0] [cxt 0] Applying table 'tbl_p4src273'
+[09:16:25.570] [bmv2] [D] [thread 2110] [14.0] [cxt 0] Looking up key:
+
+[09:16:25.570] [bmv2] [D] [thread 2110] [14.0] [cxt 0] Table 'tbl_p4src273': miss
+[09:16:25.570] [bmv2] [D] [thread 2110] [14.0] [cxt 0] Action entry is p4src273 - 
+[09:16:25.570] [bmv2] [T] [thread 2110] [14.0] [cxt 0] Action p4src273
+[09:16:25.570] [bmv2] [T] [thread 2110] [14.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(273) Primitive hdr.int_end[0].processed_time = standard_metadata.egress_global_timestamp - meta.ingress_timestamp
+[09:16:25.570] [bmv2] [D] [thread 2110] [14.0] [cxt 0] Pipeline 'egress': end
+[09:16:25.570] [bmv2] [D] [thread 2110] [14.0] [cxt 0] Deparser 'deparser': start
+[09:16:25.570] [bmv2] [D] [thread 2110] [14.0] [cxt 0] Deparsing header 'ethernet'
+[09:16:25.570] [bmv2] [D] [thread 2110] [14.0] [cxt 0] Deparsing header 'int_beg'
+[09:16:25.570] [bmv2] [D] [thread 2110] [14.0] [cxt 0] Deparsing header 'int_end[0]'
+[09:16:25.570] [bmv2] [D] [thread 2110] [14.0] [cxt 0] Deparsing header 'ipv6'
+[09:16:25.570] [bmv2] [D] [thread 2110] [14.0] [cxt 0] Deparsing header 'srh_beg'
+[09:16:25.570] [bmv2] [D] [thread 2110] [14.0] [cxt 0] Deparsing header 'srh_end[0]'
+[09:16:25.570] [bmv2] [D] [thread 2110] [14.0] [cxt 0] Deparsing header 'srh_end[1]'
+[09:16:25.570] [bmv2] [D] [thread 2110] [14.0] [cxt 0] Deparser 'deparser': end
+[09:16:25.571] [bmv2] [D] [thread 2112] [14.0] [cxt 0] Transmitting packet of size 108 out of port 2
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Processing packet received on port 3
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser 'parser': start
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser 'parser' entering state 'start'
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 0
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Extracting header 'ethernet'
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser state 'start': key is 7fff
+[09:17:22.795] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Bytes parsed: 14
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser 'parser' entering state 'parse_int_beg'
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser set: setting field 'scalars.metadata._has_int_header1' to 1
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Extracting header 'int_beg'
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser set: setting field 'scalars.metadata._matadata_to_parse3' from field 'int_beg.hop_ml' (0)
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser state 'parse_int_beg': key is 00
+[09:17:22.795] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Bytes parsed: 18
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser 'parser' entering state 'parse_ipv6'
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Extracting header 'ipv6'
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser state 'parse_ipv6': key is 01
+[09:17:22.795] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Bytes parsed: 58
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser 'parser' entering state 'parse_srh_beg'
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Extracting header 'srh_beg'
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from field 'srh_beg.segments_left' (3)
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser state 'parse_srh_beg': key is 03
+[09:17:22.795] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Bytes parsed: 66
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Extracting to header stack 1, next header is 19
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 2
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser state 'parse_srh_end': key is 02
+[09:17:22.795] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Bytes parsed: 82
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Extracting to header stack 1, next header is 20
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 1
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser state 'parse_srh_end': key is 01
+[09:17:22.795] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Bytes parsed: 98
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser 'parser' entering state 'parse_srh_end'
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Extracting to header stack 1, next header is 21
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser set: setting field 'scalars.metadata._segment_list_items_to_parse4' from expression, new value is 0
+[09:17:22.795] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser state 'parse_srh_end': key is 00
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Bytes parsed: 114
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Parser 'parser': end
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Pipeline 'ingress': start
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Applying table 'tbl_p4src226'
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Looking up key:
+
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Table 'tbl_p4src226': miss
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Action entry is p4src226 - 
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Action p4src226
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(226) Primitive meta.ingress_timestamp = standard_metadata.ingress_global_timestamp
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(227) Primitive meta.have_processed = 0
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(228) Condition "meta.has_int_header == 1" (node_3) is true
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Applying table 'tbl_p4src215'
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Looking up key:
+
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Table 'tbl_p4src215': miss
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Action entry is p4src215 - 
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Action p4src215
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(215) Primitive hdr.srh_end[0]
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Applying table 'MyIngress.add_our_telemetry'
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Looking up key:
+* hdr.srh_end[0].addr.Addr0: 00000000000000000000000000010001
+
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Table 'MyIngress.add_our_telemetry': hit with handle 0
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.srh_end[0].addr.Addr0: EXACT     00000000000000000000000000010001
+Action entry: MyIngress.addMetadata - 1,
+
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Action entry is MyIngress.addMetadata - 1,
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Action MyIngress.addMetadata
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(201) Primitive hdr.srh_end.pop_front(1)
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(202) Primitive hdr.srh_beg.segments_left = hdr.srh_beg.segments_left - 1
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(203) Primitive meta.have_processed = 1
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(205) Primitive hdr.int_beg.hop_ml = hdr.int_beg.hop_ml + 1
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(206) Primitive hdr.int_end.push_front(1)
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(207) Primitive hdr.int_end[0].setValid()
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Primitive (no source info)
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(236) Condition "hdr.srh_beg.segments_left == 0" (node_6) is false
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Applying table 'tbl_p4src245'
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Looking up key:
+
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Table 'tbl_p4src245': miss
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Action entry is p4src245 - 
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Action p4src245
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(245) Primitive meta.to_send_to_ipv6 = hdr.srh_end[0]
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Applying table 'MyIngress.forward'
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Looking up key:
+* meta.to_send_to_ipv6.Addr0: 00000000000000000000000000010006
+
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Table 'MyIngress.forward': hit with handle 6
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Dumping entry 6
+Match key:
+* meta.to_send_to_ipv6.Addr0: EXACT     00000000000000000000000000010006
+Action entry: MyIngress.setEgress - 2,
+
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Action entry is MyIngress.setEgress - 2,
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Action MyIngress.setEgress
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(185) Primitive standard_metadata.egress_spec = port
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(251) Condition "meta.have_processed == 1" (node_11) is true
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(252) Condition "hdr.int_beg.instruction_bitmap & 0b00000000010 != 0" (node_12) is true
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Applying table 'tbl_p4src253'
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Looking up key:
+
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Table 'tbl_p4src253': miss
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Action entry is p4src253 - 
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Action p4src253
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(253) Primitive hdr.int_end[0].in_port_id = standard_metadata.ingress_port
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(255) Condition "hdr.int_beg.instruction_bitmap & 0b00000000100 != 0" (node_14) is true
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Applying table 'tbl_p4src256'
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Looking up key:
+
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Table 'tbl_p4src256': miss
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Action entry is p4src256 - 
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] Action p4src256
+[09:17:22.796] [bmv2] [T] [thread 2107] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(256) Primitive hdr.int_end[0].e_port_id = standard_metadata.egress_spec
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Pipeline 'ingress': end
+[09:17:22.796] [bmv2] [D] [thread 2107] [15.0] [cxt 0] Egress port is 2
+[09:17:22.796] [bmv2] [D] [thread 2110] [15.0] [cxt 0] Pipeline 'egress': start
+[09:17:22.796] [bmv2] [T] [thread 2110] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(271) Condition "meta.have_processed == 1" (node_18) is true
+[09:17:22.796] [bmv2] [T] [thread 2110] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(272) Condition "hdr.int_beg.instruction_bitmap & 0b00000001000 != 0" (node_19) is true
+[09:17:22.796] [bmv2] [T] [thread 2110] [15.0] [cxt 0] Applying table 'tbl_p4src273'
+[09:17:22.796] [bmv2] [D] [thread 2110] [15.0] [cxt 0] Looking up key:
+
+[09:17:22.796] [bmv2] [D] [thread 2110] [15.0] [cxt 0] Table 'tbl_p4src273': miss
+[09:17:22.796] [bmv2] [D] [thread 2110] [15.0] [cxt 0] Action entry is p4src273 - 
+[09:17:22.796] [bmv2] [T] [thread 2110] [15.0] [cxt 0] Action p4src273
+[09:17:22.796] [bmv2] [T] [thread 2110] [15.0] [cxt 0] /home/p4/projekt/network_telemetry/src/p4src.p4(273) Primitive hdr.int_end[0].processed_time = standard_metadata.egress_global_timestamp - meta.ingress_timestamp
+[09:17:22.796] [bmv2] [D] [thread 2110] [15.0] [cxt 0] Pipeline 'egress': end
+[09:17:22.796] [bmv2] [D] [thread 2110] [15.0] [cxt 0] Deparser 'deparser': start
+[09:17:22.796] [bmv2] [D] [thread 2110] [15.0] [cxt 0] Deparsing header 'ethernet'
+[09:17:22.796] [bmv2] [D] [thread 2110] [15.0] [cxt 0] Deparsing header 'int_beg'
+[09:17:22.796] [bmv2] [D] [thread 2110] [15.0] [cxt 0] Deparsing header 'int_end[0]'
+[09:17:22.796] [bmv2] [D] [thread 2110] [15.0] [cxt 0] Deparsing header 'ipv6'
+[09:17:22.796] [bmv2] [D] [thread 2110] [15.0] [cxt 0] Deparsing header 'srh_beg'
+[09:17:22.796] [bmv2] [D] [thread 2110] [15.0] [cxt 0] Deparsing header 'srh_end[0]'
+[09:17:22.796] [bmv2] [D] [thread 2110] [15.0] [cxt 0] Deparsing header 'srh_end[1]'
+[09:17:22.796] [bmv2] [D] [thread 2110] [15.0] [cxt 0] Deparser 'deparser': end
+[09:17:22.796] [bmv2] [D] [thread 2112] [15.0] [cxt 0] Transmitting packet of size 108 out of port 2
 open: No such file or directory
 open: No such file or directory
 open: No such file or directory
